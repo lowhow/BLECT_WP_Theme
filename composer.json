@@ -1,0 +1,59 @@
+{
+    "name": "how/howwp",
+    "description": "How WP Theme packages",
+    "authors": [
+        {
+            "name": "How",
+            "email": "lowhow@gmail.com"
+        }
+    ],
+    "repositories": [
+    		{
+		      "type": "composer",
+		      "url": "http://wpackagist.org"
+		    },
+		    {
+		      "type": "package",
+		      "package": {
+		        "name": "wordpress",
+		        "type": "webroot",
+		        "version": "4.0",
+		        "dist": {
+		          "type": "zip",
+		          "url": "https://github.com/WordPress/WordPress/archive/4.0.zip"
+		        },
+		        "require": {
+		          "fancyguy/webroot-installer": "1.0.0"
+		        }
+		      }
+		    }
+    ],
+    "require": 
+    {
+		    "wordpress": "4.0",
+		    "fancyguy/webroot-installer": "1.0.0",
+		    "wpackagist-plugin/akismet": "dev-trunk",
+		    "wpackagist-plugin/regenerate-thumbnails": ">=2.2",
+		    "wpackagist-plugin/wp-pagenavi": ">=2.8"
+    },
+    "extra": 
+    {
+		    "webroot-dir": "cms",
+		    "webroot-package": "wordpress",
+		    "installer-paths":
+		    {
+		    	"content/plugins/{$name}": ["type:wordpress-plugin"]
+		    }
+
+	  },
+	  "require-dev": {
+        "phpunit/phpunit": "4.3.*"
+    },
+	  "autoload": 
+	  {
+	  		"psr-4":
+	  		{
+	  			"Framework\\": "content/themes/blect/framework"
+	  		}
+	  }
+}
