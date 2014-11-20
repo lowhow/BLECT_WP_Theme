@@ -47,43 +47,43 @@ require get_template_directory() . '/blect-config.php';
  
  */
 
-if ( is_admin() ) {
-	add_filter( 'image_send_to_editor', 'fw_add_prettyPhoto_rel_in_editor', 10, 7 );
-	add_filter( 'wp_get_attachment_link', 'fw_add_prettyPhoto_rel_in_gallery', 10, 4 );
-}
+// if ( is_admin() ) {
+// 	add_filter( 'image_send_to_editor', 'fw_add_prettyPhoto_rel_in_editor', 10, 7 );
+// 	add_filter( 'wp_get_attachment_link', 'fw_add_prettyPhoto_rel_in_gallery', 10, 4 );
+// }
 
-/** 
- *  Hook into 'image_send_to_editor' and place rel="prettyPhoto" 
- */
-function fw_add_prettyPhoto_rel_in_editor($html, $id, $alt, $title, $align, $url, $size ) {
-  global $post;
-  global $permalink;
+// /** 
+//  *  Hook into 'image_send_to_editor' and place rel="prettyPhoto" 
+//  */
+// function fw_add_prettyPhoto_rel_in_editor($html, $id, $alt, $title, $align, $url, $size ) {
+//   global $post;
+//   global $permalink;
 
-  $hook = "rel";
-  $selector = 'prettyPhoto';
+//   $hook = "rel";
+//   $selector = 'prettyPhoto';
   
-  if ( ! $permalink )
-    $html = preg_match( '/' . $hook . '="/', $html ) ? str_replace( $hook . '="', $hook . '="' . $selector. '" ' , $html ) : str_replace( '<a ', '<a ' . $hook . '="' . $selector . '" ', $html );
+//   if ( ! $permalink )
+//     $html = preg_match( '/' . $hook . '="/', $html ) ? str_replace( $hook . '="', $hook . '="' . $selector. '" ' , $html ) : str_replace( '<a ', '<a ' . $hook . '="' . $selector . '" ', $html );
   
-  return $html;
-}
+//   return $html;
+// }
 
 
-/** 
- * Hook into 'wp_get_attachment_link' and place rel="prettyPhoto" 
- */
-function fw_add_prettyPhoto_rel_in_gallery($html, $id, $size, $permalink) {
-	global $post;
+// /** 
+//  * Hook into 'wp_get_attachment_link' and place rel="prettyPhoto" 
+//  */
+// function fw_add_prettyPhoto_rel_in_gallery($html, $id, $size, $permalink) {
+// 	global $post;
 
-	$pid = $post->ID;
+// 	$pid = $post->ID;
 
-  $hook = "rel";
-  $selector = 'prettyPhoto';
+//   $hook = "rel";
+//   $selector = 'prettyPhoto';
 
-	if ( ! $permalink )
-		$html = preg_match( '/' . $hook . '="/', $html ) ? str_replace( $hook . '="', $hook . '="' . $selector . '[gallery-' . $pid . '] ', $html ) : str_replace( '<a ', '<a ' . $hook . '="' . $selector . '[gallery-' . $pid . ']" ', $html );
-	return $html;
-}
+// 	if ( ! $permalink )
+// 		$html = preg_match( '/' . $hook . '="/', $html ) ? str_replace( $hook . '="', $hook . '="' . $selector . '[gallery-' . $pid . '] ', $html ) : str_replace( '<a ', '<a ' . $hook . '="' . $selector . '[gallery-' . $pid . ']" ', $html );
+// 	return $html;
+// }
 
 
 

@@ -6,7 +6,7 @@ class NavMenu {
 	 * Register Navigation Menu
 	 * @return [type]
 	 */
-	public function register_nav_menu() {
+	public function register() {
 
 		/**
 		 * Register a primary navigation

@@ -1,6 +1,6 @@
 <?php namespace Framework\WordPress;
 
-class EarlyLoad {
+class Helper {
 
 	/**
 	 * Load theme text domain.
@@ -11,14 +11,12 @@ class EarlyLoad {
 		load_theme_textdomain( wp_get_theme()->get( 'TextDomain' ), FW_THEME_LANG_DIR );
 
 		return $this;
-
 	}
-
 
 
 	/**
 	 * Remove WordPress Branding generator
-	 * @return [type]
+	 * @link http://wpsmackdown.com/wordpress-cleanup-wp-head/
 	 */
 	public function remove_wp_generator() {
 
@@ -28,6 +26,77 @@ class EarlyLoad {
 	}
 
 
+	/**
+	 * Remove Windows Live Writer Manifest Link
+	 * @link http://wpsmackdown.com/wordpress-cleanup-wp-head/
+	 */
+	public function remove_wlwmanifest_link() {
+
+		remove_action('wp_head', 'wlwmanifest_link');
+
+		return $this;
+	}
+
+
+	/**
+	 * Remove Really Simple Discovert Link
+	 * @link http://wpsmackdown.com/wordpress-cleanup-wp-head/
+	 */
+	public function remove_rsd_link() {
+
+		remove_action('wp_head', 'rsd_link');
+
+		return $this;
+	}
+
+
+	/**
+	 * Remove shortlink from <head>
+	 * @link http://wpsmackdown.com/wordpress-cleanup-wp-head/
+	 */
+	public function remove_shortlink() {
+
+		remove_action('wp_head', 'wp_shortlink_wp_head', 10, 0);
+
+		return $this;
+	}
+
+
+	/**
+	 * Remove previous/next post links from <head>
+	 * @link http://wordpress.stackexchange.com/questions/1507/steps-to-take-to-hide-the-fact-a-site-is-using-wordpress
+	 */
+	public function remove_adjacent_posts_rel_link() {
+
+		remove_action('wp_head', 'adjacent_posts_rel_link_wp_head', 10, 0);
+
+		return $this;
+	}
+
+
+	/**
+	 * Remove Feed Links
+	 * @link http://wordpress.stackexchange.com/questions/1507/steps-to-take-to-hide-the-fact-a-site-is-using-wordpress
+	 */
+	public function remove_feed_links() {
+		
+		remove_action('wp_head', 'feed_links', 2);
+
+		return $this;
+	}
+
+
+	/**
+	 * Remove Feed Links Extra
+	 * @link http://wordpress.stackexchange.com/questions/1507/steps-to-take-to-hide-the-fact-a-site-is-using-wordpress
+	 */
+	public function remove_feed_links_extra() {
+		
+		remove_action('wp_head', 'feed_links_extra', 3);
+
+		return $this;
+	}
+
 
 	/**
 	 * Initialize WP Title
@@ -35,12 +104,10 @@ class EarlyLoad {
 	 */
 	public function add_wp_title() {
 
-		add_filter( 'wp_title', array( $this, 'filter_hooks_add_wp_title' ), 10, 2 );
+		add_filter( 'wp_title', array( $this, 'filter_hook_add_wp_title' ), 10, 2 );
 
 		return $this;
-
 	}
-
 
 
 	/**
@@ -49,7 +116,7 @@ class EarlyLoad {
 	 * @param [type] $sep
 	 * @return $title
 	 */
-	public function filter_hooks_add_wp_title( $title, $sep ) {
+	public function filter_hook_add_wp_title( $title, $sep ) {
 
 		global $paged, $page;
 
@@ -76,7 +143,6 @@ class EarlyLoad {
 		return $title;
 
 	}
-
 
 
 	/**

@@ -40,8 +40,8 @@ require trailingslashit( FW_VENDOR_DIR ) . 'autoload.php';
 /** 
  Bootstrapping Framework
  */
-require_once ( 'ThemeSetup.php' );
-$blect = new ThemeSetup();
+$blect = new Framework\ThemeSetup();
+$blect->run();
 
 
 
