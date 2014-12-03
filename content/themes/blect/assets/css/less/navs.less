@@ -1,0 +1,87 @@
+/*
+d8b   db  .d8b.  db    db .d8888. 
+888o  88 d8' `8b 88    88 88'  YP 
+88V8o 88 88ooo88 Y8    8P `8bo.   
+88 V8o88 88~~~88 `8b  d8'   `Y8b. 
+88  V888 88   88  `8bd8'  db   8D 
+VP   V8P YP   YP    YP    `8888Y' 
+ */
+.icon-bar{
+    background-color: @text-color;
+}
+
+.navbar{
+    border-color: @gray-lighter;
+}
+.navbar-nav{
+    text-transform: uppercase;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.navbar-fixed-top{
+}
+
+//////////////////////
+// navbar-blect-top //
+//////////////////////
+.navbar-blect-top{
+    border-color: @gray-lighter;
+    min-height: 40px;
+    font-size: 80%;
+    font-weight: bold;
+  
+
+
+    .navbar-nav>li{
+        border-left: 1px solid @gray-lighter;
+        float:left;
+
+        &:first-child{
+            border-left: 0;
+        }
+
+        >a{
+            padding: 0 @line-height-computed / 4;
+        }
+    }
+}
+
+//////////////////////////
+// navbar-blect-default //
+//////////////////////////
+.navbar-blect-default{
+    .navbar-nav>li{
+        background-color: transparent;
+
+        >a{
+            color: @skin-gray-dark;
+            padding: @line-height-computed / 1.5 @line-height-computed / 4;
+
+            &:hover,
+            &:focus,
+            &:active{
+                color: darken( @skin-gray-lighter, 10% );
+                background-color: transparent;
+            }
+        }
+        &.open>a{
+            background-color: transparent;
+        }
+    }
+}
+
+///////////////////
+// MEDIA QUERIES //
+///////////////////
+/* Small devices (tablets, 768px and up) */
+@media (min-width: @screen-sm-min) { 
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: @screen-md-min) { 
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: @screen-lg-min) {
+}

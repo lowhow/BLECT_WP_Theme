@@ -8,42 +8,25 @@
  */
 
 get_header(); ?>
-<div id="main">
-	<div id="main-inner" class="container">
-		<div class="row">
 
-			<div id="primary" class="content-area">
-				<div id="content" class="site-content" role="main">
+<?php get_template_part( 'partials/page-header/category' ); ?>
 
-					<?php if ( have_posts() ) : ?>
+<div class="page-body">
+	<div class="page-body-container container">
+		<div class="page-body-inner row">
+			<?php  
+			/**
+			 * Primary
+			 */
+			?>
+			<div id="primary" class="content-area col-md-8 margin-bottom-2x">
+				<div id="content" class="site-content " role="main">
 
-					<header class="archive-header">
-
-						<?php
-						/**
-						 * Get breadcrumbs
-						 */ 
-						if ( function_exists('fw_breadcrumbs') ) fw_breadcrumbs(); 
-						?>
-
-						<h1 class="archive-title cat-title"><?php single_cat_title( '', TRUE ); ?></h1>
-
-						<?php
-							// Show an optional term description.
-							$term_description = term_description();
-							if ( ! empty( $term_description ) ) :
-								printf( '<div class="taxonomy-description">%s</div>', $term_description );
-							endif;
-						?>
-
-					</header><?php // END: .archive-header ?>
-					
+					<?php if ( have_posts() ) : ?>	
 					<?php /** The loop. */ ?>
 					<?php	while ( have_posts() ) : the_post(); ?>
 
-					<div class="row">
-						<?php get_template_part( 'templates/content-listing', 'category' ); ?>
-					</div>
+						<?php get_template_part( 'partials/content/listing' ); ?>
 
 					<?php endwhile; ?>
 					<?php
@@ -66,7 +49,7 @@ get_header(); ?>
 
 			<?php get_sidebar(); ?>
 
-  	</div><?php // END: .row ?>
-	</div><?php // END: #main-inner ?>
-</div><?php // END: #main ?>
+		</div><?php // END: .page-body-inner ?>
+	</div><?php // END: .page-body-container ?>
+</div><?php // END: .page-body ?>
 <?php get_footer(); ?>

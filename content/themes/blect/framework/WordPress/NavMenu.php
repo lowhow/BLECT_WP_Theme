@@ -1,31 +1,18 @@
 <?php namespace Framework\WordPress;
 
-class NavMenu {
-
+class NavMenu 
+{
 	/**
 	 * Register Navigation Menu
 	 * @return [type]
 	 */
-	public function register() {
+	public function register() 
+	{
+		register_nav_menu( 'main', __( 'Main', FW_TEXTDOMAIN ) );
 
-		/**
-		 * Register a primary navigation
-		 */
-		register_nav_menu( 'primary', __( 'Main Navigation', wp_get_theme()->get( 'TextDomain' ) ) );
+		register_nav_menu( 'mobile', __( 'Mobile', FW_TEXTDOMAIN ) );
 
-		/**
-		 * Register a mobile navigation
-		 */
-		register_nav_menu( 'mobile', __( 'Mobile Navigation', wp_get_theme()->get( 'TextDomain' ) ) );
-
-		return $this;
-
-	}
-
-
-	public function add_class_to_current_menu_item() {
-
-		add_filter('nav_menu_css_class' , array( $this, 'filter_hook_add_class_to_current_menu_item' ) , 10 , 2);
+		register_nav_menu( 'top', __( 'Top', FW_TEXTDOMAIN ) );
 
 		return $this;
 	}
@@ -36,7 +23,7 @@ class NavMenu {
 	 * @param [type] $classes
 	 * @param [type] $item
 	 */
-	public function filter_hook_add_class_to_current_menu_item( $classes, $item ){
+	public function add_class_to_current_menu_item( $classes, $item ){
 
 		if(in_array('current-menu-item', $classes)){
 			$classes[] = "active";

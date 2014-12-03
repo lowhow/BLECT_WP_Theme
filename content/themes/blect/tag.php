@@ -8,57 +8,45 @@
  */
 
 get_header(); ?>
-<div id="primary" class="content-area">
-	<div id="content" class="site-content" role="main">
 
-		<?php if ( have_posts() ) : ?>
+<?php get_template_part( 'partials/page-header/category' ); ?>
 
-		<header class="archive-header">
+<div class="page-body">
+	<div class="page-body-container container">
+		<div class="page-body-inner row">
 
-			<?php
-			/**
-			 * Get breadcrumbs
-			 */ 
-			if ( function_exists('fw_breadcrumbs') ) fw_breadcrumbs(); 
-			?>
+			<div id="primary" class="content-area col-md-8 margin-bottom-2x">
+				<div id="content" class="site-content " role="main">
 
-			<h1 class="archive-title tag-title"><?php single_cat_title( '', TRUE ); ?></h1>
+					<?php if ( have_posts() ) : ?>	
+					<?php /** The loop. */ ?>
+					<?php	while ( have_posts() ) : the_post(); ?>
 
-			<?php
-				// Show an optional term description.
-				$term_description = term_description();
-				if ( ! empty( $term_description ) ) :
-					printf( '<div class="taxonomy-description">%s</div>', $term_description );
-				endif;
-			?>
+						<?php get_template_part( 'partials/content/listing' ); ?>
 
-		</header><?php // END: .archive-header ?>
-		
-		<?php /** The loop. */ ?>
-		<?php	while ( have_posts() ) : the_post(); ?>
 
-		<div class="row">
-			<?php get_template_part( 'templates/content-listing', 'tag' ); ?>
-		</div>
+					<?php endwhile; ?>
+					<?php
+					/**
+					 * Pagination
+					 */	
+					if ( function_exists( 't_pagination' ) ) 	t_pagination();
+					?>
+					<?php
+					else : // ELSE: if have_posts()
 
-		<?php endwhile; ?>
-		<?php
-		/**
-		 * Pagination
-		 */	
-		if ( function_exists( 't_pagination' ) ) 	t_pagination();
-		?>
-		<?php
-		else : // ELSE: if have_posts()
+						/** If no content, include the "No posts found" template. */
+						get_template_part( 'templates/content', 'none' );
 
-			/** If no content, include the "No posts found" template. */
-			get_template_part( 'templates/content', 'none' );
+					endif; // END: if have_posts()
+					?>
 
-		endif; // END: if have_posts()
-		?>
+				</div><?php // END: #content ?>
+			</div><?php // END: #primary ?>
 
-	</div><?php // END: #content ?>
-</div><?php // END: #primary ?>
+			<?php get_sidebar(); ?>
 
-<?php get_sidebar(); ?>
+		</div><?php // END: .page-body-inner ?>
+	</div><?php // END: .page-body-container ?>
+</div><?php // END: .page-body ?>
 <?php get_footer(); ?>

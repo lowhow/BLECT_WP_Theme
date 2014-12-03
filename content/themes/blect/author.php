@@ -8,52 +8,26 @@
  */
 
 get_header(); ?>
-<div id="main">
-	<div id="main-inner" class="container">
-		<div class="row">
 
-			<div id="primary" class="content-area">
+<?php get_template_part( 'partials/page-header/author' ); ?>
+
+<div class="page-body">
+	<div class="page-body-container container">
+		<div class="page-body-inner row">
+			<?php  
+			/**
+			 * Primary
+			 */
+			?>
+			<div id="primary" class="content-area col-md-8 margin-bottom-2x">
 				<div id="content" class="site-content" role="main">
 
 					<?php if ( have_posts() ) : ?>
-
-					<header class="archive-header">
-
-						<?php
-						/**
-						 * Get breadcrumbs
-						 */ 
-						if ( function_exists('fw_breadcrumbs') ) fw_breadcrumbs(); 
-						?>
-
-						<h1 class="archive-title author-title"><?php	printf( __( '%s\'s <small>articless</small>' ), get_the_author() ); ?></h1>
-
-						<?php
-
-						// If a user has filled out their description, show a bio on their entries.
-						if ( get_the_author_meta( 'description' ) ) : ?>
-						<div class="author-info">
-							<div class="row">
-					      <div class="author-avatar">
-					        <?php echo get_avatar( get_the_author_meta( 'user_email' ), apply_filters( 'twentythirteen_author_bio_avatar_size', 74 ) ); ?>
-					      </div><?php // END: .author-avatar ?><!-- .author-avatar -->
-					      <div class="author-description">
-					        <p class="author-bio">
-					          <?php the_author_meta( 'description' ); ?>
-					        </p>
-					      </div><?php // END: .author-description ?>
-					    </div>
-						</div>              
-						<?php endif; ?>
-
-					</header><?php // END: .archive-header ?>
 					
 					<?php /** The loop. */ ?>
 					<?php	while ( have_posts() ) : the_post(); ?>
 
-					<div class="row">
-						<?php get_template_part( 'templates/content-listing', 'author' ); ?>
-					</div>
+						<?php get_template_part( 'partials/content/listing' ); ?>
 
 					<?php endwhile; ?>
 					<?php
@@ -73,10 +47,15 @@ get_header(); ?>
 
 				</div><?php // END: #content ?>
 			</div><?php // END: #primary ?>
-
+			<?php  
+			/**
+			 * Secondary
+			 */
+			?>
 			<?php get_sidebar(); ?>
 
-  	</div><?php // END: .row ?>
-	</div><?php // END: #main-inner ?>
-</div><?php // END: #main ?>
+		</div><?php // END: .page-body-inner ?>
+	</div><?php // END: .page-body-container ?>
+</div><?php // END: .page-body ?>
+
 <?php get_footer(); ?>

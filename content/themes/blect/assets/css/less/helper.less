@@ -1,0 +1,89 @@
+/*
+db   db d88888b db      d8888b. d88888b d8888b. .d8888. 
+88   88 88'     88      88  `8D 88'     88  `8D 88'  YP 
+88ooo88 88ooooo 88      88oodD' 88ooooo 88oobY' `8bo.   
+88~~~88 88~~~~~ 88      88~~~   88~~~~~ 88`8b     `Y8b. 
+88   88 88.     88booo. 88      88.     88 `88. db   8D 
+YP   YP Y88888P Y88888P 88      Y88888P 88   YD `8888Y' 
+ */
+.text-size-huge{
+	font-size: 404px * 0.404;
+	white-space: nowrap;
+}
+
+img{
+	.img-responsive;
+}
+
+::selection {
+  background: #505b66; /* WebKit/Blink Browsers */
+  color: #fff;
+}
+::-moz-selection {
+  background: #505b66; /* Gecko Browsers */
+  color: #fff;
+}
+
+a,
+a:hover{
+	.transition( ~'all .25s' );
+}
+
+///////////////////
+// Margin helper //
+///////////////////
+.margin-top-0{
+	margin-top: 0;
+}
+
+.margin-bottom-1x{
+	margin-bottom: @line-height-computed;
+}
+
+.margin-bottom-2x{
+	margin-bottom: @line-height-computed * 2;
+}
+
+////////////////////
+// Padding helper //
+////////////////////
+.padding-right-1x{
+	padding-right: @line-height-computed;
+}
+.padding-right-2x{
+	padding-right: @line-height-computed * 2;
+}
+
+/**
+ * Dark theme
+ */
+.dark{
+	background: @skin-gray-dark;
+	color: darken( @skin-gray-lighter, 20% );
+
+	a{
+		color: #fff;
+		text-decoration: none;
+
+		&:hover,
+		&:focus,
+		&:active{
+			color: @skin-gray-light;
+		}
+	}
+}
+
+///////////////////
+// MEDIA QUERIES //
+///////////////////
+/* Small devices (tablets, 768px and up) */
+@media (min-width: @screen-sm-min) { 
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: @screen-md-min) { 
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: @screen-lg-min) {
+}

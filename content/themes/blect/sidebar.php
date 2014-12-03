@@ -7,14 +7,7 @@
  * @since The Starry Night 1.0 with Vun Hougkh 1.0
  */
 ?>
-<div id="secondary">
-	<?php
-		$description = get_bloginfo( 'description', 'display' );
-		if ( ! empty ( $description ) ) :
-	?>
-	<h2 class="site-description"><?php echo esc_html( $description ); ?></h2>
-	<?php endif; ?>
-
+<div id="secondary" class="col-md-4 margin-bottom-2x">
 	<?php if ( has_nav_menu( 'secondary' ) ) : ?>
 	<nav role="navigation" class="navigation site-navigation secondary-navigation">
 		<?php wp_nav_menu( array( 'theme_location' => 'secondary' ) ); ?>

@@ -6,11 +6,17 @@ class StylesAndScripts {
 	 * Enqueue Styles with WordPress
 	 * @return [type]
 	 */
-	public function enqueue_styles() {
+	public function enqueue_styles() 
+	{
 
 		////////////////////
 		// stylesheets //
 		////////////////////
+
+		/**
+		 * Link Skin Stylesheet (compiled and minified from LESS)
+		 */
+		wp_enqueue_style( 'fontawesome', trailingslashit( FW_VENDOR_URI ) . 'fontawesome/css/font-awesome.min.css', array(), null );
 
 		/**
 		 * Link Skin Stylesheet (compiled and minified from LESS)
@@ -31,15 +37,16 @@ class StylesAndScripts {
 	 * Enqueue Scripts with WordPress
 	 * @return [type]
 	 */
-	public function enqueue_scripts() {
+	public function enqueue_scripts() 
+	{
 
 		///////////////
-	  // Scripts //
-	  ///////////////
+		// Scripts //
+		///////////////
 
-	  /**
-	   * Modernizr.js
-	   */
+		/**
+		 * Modernizr.js
+		 */
 		wp_enqueue_script( 'modenizr-js', trailingslashit( FW_VENDOR_URI ) . 'modernizr/modernizr.js', array(), null, TRUE );
 
 		/**
@@ -50,20 +57,55 @@ class StylesAndScripts {
 		wp_deregister_script('jquery');
 		wp_enqueue_script( 'jquery', trailingslashit( FW_VENDOR_URI ) . 'jquery/dist/jquery.min.js', array(), null, TRUE );
 
+		/**
+		 * Bootstrap Script
+		 */
+	  	wp_enqueue_script( 'bs-js', trailingslashit( FW_VENDOR_URI ) . 'bootstrap/dist/js/bootstrap.min.js', array( 'jquery' ), null, TRUE );
 
 		/**
 		 * Register Vendor scripts
 		 */
-	  wp_enqueue_script( 'vendor-js', trailingslashit( FW_THEME_ASSETS_JS_URI ) . 'vendor.js', array(), null, TRUE );
+	  	wp_enqueue_script( 'vendor-js', trailingslashit( FW_THEME_ASSETS_JS_URI ) . 'vendor-min.js', array(), null, TRUE );
 	  
-	  /**
-	   * Adding Theme's script .
-	   */
-		wp_enqueue_script( 'application-js', trailingslashit( FW_THEME_ASSETS_JS_URI ) . 'application.js', array( 'vendor-js' ), null, TRUE );
+		/**
+		 * Adding Theme's script .
+		 */
+		wp_enqueue_script( 'application-js', trailingslashit( FW_THEME_ASSETS_JS_URI ) . 'application-min.js', array( 'vendor-js' ), null, TRUE );
 
 
 		return $this;
 
+	}
+
+
+	/**
+	 * [admin_enqueue_scripts description]
+	 * @return [type] [description]
+	 */
+	public function admin_enqueue_styles() 
+	{
+		/**
+		 * Main Stylesheet 
+		 */
+		wp_enqueue_style( 'admin', trailingslashit( FW_THEME_ASSETS_CSS_URI ) . 'admin.css', array(), null );
+	}
+
+
+	/**
+	 * [admin_enqueue_scripts description]
+	 * @return [type] [description]
+	 */
+	public function admin_enqueue_scripts() 
+	{
+		/**
+		 * Boostrap3 Script 
+		 */
+		wp_enqueue_script( 'bs3-js', trailingslashit( FW_VENDOR_URI ) . '/bootstrap/dist/js/bootstrap.min.js', array(), null );
+
+		/**
+		 * Main Script 
+		 */
+		wp_enqueue_script( 'admin-js', trailingslashit( FW_THEME_ASSETS_JS_URI ) . 'admin.js', array(), null );
 	}
 
 }

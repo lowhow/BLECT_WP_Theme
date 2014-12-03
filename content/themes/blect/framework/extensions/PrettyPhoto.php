@@ -1,20 +1,17 @@
-<?php namespace Framework\WordPress;
+<?php namespace Framework\Extensions;
+use Framework\Core\Observer as Observer;
 
-class Media {
+class PrettyPhoto implements Observer
+{
 
-	//////////////////
-	// prettyPhoto //
-	//////////////////
-
-	public function add_prettyPhoto() {
-
+	public function handle() 
+	{
 		if ( is_admin() ) {
 			add_filter( 'image_send_to_editor', array( $this, 'filter_hooks_add_prettyPhoto_rel_in_editor' ), 10, 7 );
 			add_filter( 'wp_get_attachment_link', array( $this, 'filter_hooks_add_prettyPhoto_rel_in_gallery' ), 10, 4 );
 		}
 
 		return $this;
-
 	}
 
 
@@ -42,7 +39,8 @@ class Media {
 	 *
 	 * @todo Fix this, prettyPhoto will not always be around
 	 */
-	public function filter_hooks_add_prettyPhoto_rel_in_gallery($html, $id, $size, $permalink) {
+	public function filter_hooks_add_prettyPhoto_rel_in_gallery($html, $id, $size, $permalink) 
+	{
 		global $post;
 		global $permalink;
 
@@ -53,6 +51,7 @@ class Media {
 
 		if ( ! $permalink )
 			$html = preg_match( '/' . $hook . '="/', $html ) ? str_replace( $hook . '="', $hook . '="' . $selector . '[gallery-' . $pid . '] ', $html ) : str_replace( '<a ', '<a ' . $hook . '="' . $selector . '[gallery-' . $pid . ']" ', $html );
+		
 		return $html;
 	}
 

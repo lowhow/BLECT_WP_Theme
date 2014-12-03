@@ -3,7 +3,7 @@
  * The template for general page header
  *
  * @package WordPress
- * @subpackage Vun_Hougkh
+ * @subpackage BLECT
  * @since The Starry Night 1.0 with Vun Hougkh 1.0
  */
 ?><!DOCTYPE html>
@@ -32,45 +32,20 @@
 	<div id="page" class="hfeed site">
 		<header id="masthead" class="site-header" role="banner">
 
-      <?php 
-      /**
-       * Collapsible Main Menu
-       */ 
-      ?>
-      <nav class="navbar navbar-default navbar-static-top" role="navigation">
-        <div class="container">
-          <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
+            <?php  get_template_part( 'partials/nav/blect', 'top' ); ?>
 
-            <a class="navbar-brand" href="<?php echo home_url(); ?>">
-              <?php bloginfo('name'); ?>
-            </a>
-          </div>
+            <?php // get_template_part( 'partials/nav/bootstrap', 'default' ); ?>
 
-          <?php
-          wp_nav_menu( array(
-              'menu'              => 'primary',
-              'theme_location'    => 'primary',
-              'depth'             => 2,
-              'container'         => 'div',
-              'container_class'   => 'collapse navbar-collapse navbar-ex1-collapse',
-              'menu_class'        => 'nav navbar-nav',
-              'fallback_cb'       => 'wp_bootstrap_navwalker::fallback',
-              'walker'            => new wp_bootstrap_navwalker(),
-            )
-          );
-          ?>
-        </div>
-      </nav>
-			
-		</header><?php // END: #masthead ?>
+            <?php // get_template_part( 'partials/nav/bootstrap', 'inverse' ); ?>     
+
+            <?php get_template_part( 'partials/nav/blect', 'default' ); ?>
+
+            <?php // get_template_part( 'partials/nav/blect', 'division' ); ?>
+
+            <?php // get_template_part( 'partials/nav/blect', 'cut-in' ); ?>   
+
+        </header><?php // END: #masthead ?>
 
 
-    <div id="main">
-      <div id="main-inner" class="container">
-        <div class="row">
+        <div id="main">
+          <div id="main-inner">

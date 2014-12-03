@@ -1,11 +1,12 @@
 <?php namespace Framework\WordPress;
 
-class ThemeSupport {
+class ThemeSupport 
+{
 
 	/**
 	 * [add description]
 	 */
-	public function add() {
+	public function add_theme_support() {
 
 		/**
 		 * Switches default core markup for search form, comment form, and comments to output valid HTML5.
@@ -35,7 +36,7 @@ class ThemeSupport {
 		/**
 		 * Adds RSS feed links to <head> for posts and comments.
 		 */
-		add_theme_support( 'automatic-feed-links' );
+		//add_theme_support( 'automatic-feed-links' );
 
 
 		return $this;
