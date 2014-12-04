@@ -8,3 +8,5 @@ edit config file
 - db connection
 - check if content_url is correct
 - allow debug = true until production
+
+Setup web server/virtual host
