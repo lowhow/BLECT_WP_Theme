@@ -1,7 +1,7 @@
 <div class="page-header">
 	<div class="page-header-container container">
 		<div class="page-header-inner">
-			<h1 class="page-title text-uppercase"><?php echo get_the_title() ?></h1>
+			<h1 class="page-title"><?php echo get_the_title() ?></h1>
 			<?php 
 			global $helper;
 			$helper->fw_breadcrumbs();

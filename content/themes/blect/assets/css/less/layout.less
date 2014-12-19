@@ -11,6 +11,7 @@ Y88888P YP   YP    YP     `Y88P'  ~Y8888P'    YP
  * BODY
  */
 body{ 
+	background: url(../img/pinstriped_suit.jpg);
 }
 
 /**
@@ -23,12 +24,16 @@ body{
  * --Header
  */
 #masthead{ 
+	background: url(../img/samplebg.jpg) top center no-repeat;
+	background-size: 100% auto;
+	transition: none;
 }
 
 /**
  * --Main
  */
 #main{ 
+	background-color: #fff;
 }
 #main-inner{
 }
@@ -84,19 +89,23 @@ body{
  * --Footer
  */
 #colophon{ 
-  padding: @line-height-computed 0;
+	background-color: transparent;
+  	padding: @line-height-computed 0;
 }
-
 .site-info{ 
-  font-size: @font-size-small;
+  	font-size:1rem;
 }
- 
 
 ///////////////////
 // MEDIA QUERIES //
 ///////////////////
 /* Small devices (tablets, 768px and up) */
 @media (min-width: @screen-sm-min) { 
+#masthead{
+	background: url(../img/samplebg.jpg) center center no-repeat fixed;
+	background-size: cover;
+	padding-bottom:  @line-height-computed;
+}
 }
 
 /* Medium devices (desktops, 992px and up) */

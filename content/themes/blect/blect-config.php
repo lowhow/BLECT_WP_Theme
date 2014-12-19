@@ -9,8 +9,10 @@ if( !defined( 'ABSPATH' ) ) {
 define( 'FW_NAME', 'BLECT' );
 define( 'FW_VER', '2.0' );
 define( 'FW_DIR', trailingslashit( dirname(__FILE__) . '/framework' ) );
+define( 'FW_UPLOAD_DIR', trailingslashit( dirname( dirname( dirname( __DIR__ ) ) ) . '/data' ) );
+define( 'FW_UPLOAD_URI', trailingslashit( get_bloginfo( 'url' ) ) . 'data' );
 define( 'FW_VENDOR_DIR', trailingslashit( dirname( dirname( dirname( __DIR__ ) ) ) . '/vendor' ) );
-define( 'FW_VENDOR_URI', trailingslashit( isset($_SERVER['HTTPS']) ? 'https://' : 'http://' . $_SERVER['HTTP_HOST'] ) . 'BLECT_WP_Theme/vendor' );
+define( 'FW_VENDOR_URI', trailingslashit( get_bloginfo( 'url' ) ) . 'vendor' );
 define( 'FW_THEME_DIR', trailingslashit( get_template_directory() ) );
 define( 'FW_THEME_URI', trailingslashit( get_template_directory_uri() ) );
 define( 'FW_THEME_ADMIN_DIR', trailingslashit( FW_THEME_DIR . 'admin' ) );

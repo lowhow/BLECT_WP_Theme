@@ -1,12 +1,15 @@
 <?php namespace Framework\Extensions;
+use Framework\Core\Observer as Observer;
+use Framework\WordPress\Loader as Loader;
 
-class SliderMetaBoxes implements \Framework\Core\Observer
+class SliderMetaBoxes implements Observer
 {
-	public function __construct()
-	{
-		add_action( 'admin_enqueue_scripts', array( $this, 'admin_enqueue_scripts' ) );
-	}
+	private $loader;
 
+	public function __construct( Loader $loader )
+	{
+		$this->loader = $loader;
+	}
 
 	public function handle() 
 	{	
@@ -37,7 +40,7 @@ class SliderMetaBoxes implements \Framework\Core\Observer
 					)
 				)
 			);
-			$metaBox = new \Framework\Core\MetaBox( $metaboxArgs );
+			$metaBox = new \Framework\Core\MetaBox( $this->loader, $metaboxArgs );
 		}
 
 		return $this;
@@ -74,14 +77,5 @@ class SliderMetaBoxes implements \Framework\Core\Observer
 				</form>
 			</div>
 		<?php 
-	}
-
-
-
-	public function admin_enqueue_scripts()
-	{
-		wp_enqueue_media();
-		
-		wp_enqueue_script( 'admin-media-in-metabox-js', trailingslashit( FW_THEME_ASSETS_JS_URI ) . 'admin-media-in-metabox.js', array('media-upload'), null );
 	}
 }

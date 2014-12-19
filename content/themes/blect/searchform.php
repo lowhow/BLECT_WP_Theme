@@ -1,13 +1,11 @@
 <form role="search" method="get" class="search-form" action="<?php echo home_url( '/' ); ?>">
-	<label>
-		<span class="screen-reader-text sr-only"><?php echo _x( 'Search for:', 'label' ) ?></span>
-	</label>
+
 	<div class="row">
-		<div class="col-sm-6 col-sm-offset-3">
+		<div class="col-sm-8 col-sm-offset-2">
 			<div class="input-group">
-			    <input type="search" class="search-field form-control input-lg" placeholder="<?php echo esc_attr_x( 'Search …', 'placeholder' ) ?>" value="<?php echo get_search_query() ?>" name="s" title="<?php echo esc_attr_x( 'Search for:', 'label' ) ?>" />
+			    <input type="search" class="search-field form-control input-lg transparent-bg-light" placeholder="<?php echo esc_attr_x( 'Search &hellip;', 'placeholder', FW_TEXTDOMAIN ) ?>" value="<?php echo get_search_query() ?>" name="s" title="<?php echo esc_attr_x( 'Search for:', 'label', FW_TEXTDOMAIN ) ?>" />
 			    <span class="input-group-btn">
-			        <button class="btn btn-danger search-submit input-lg text-uppercase" type="submit"><?php echo esc_attr_x( 'Search', 'submit button' ) ?></button>
+			        <button class="btn btn-danger search-submit input-lg text-uppercase" type="submit"><i class="fa fa-search fa-fw"></i> <?php echo esc_attr_x( 'Search', 'submit button', FW_TEXTDOMAIN ) ?></button>
 			    </span>
 		    </div>
 		</div>

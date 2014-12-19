@@ -3,7 +3,7 @@
 class ExtensionLoader implements Subject
 {
 
-	protected $observers = [];
+	protected $observers = array();
 
 	/**
 	 * Attach Observers

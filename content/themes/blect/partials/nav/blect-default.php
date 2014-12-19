@@ -7,12 +7,12 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="<?php echo home_url(); ?>"><?php bloginfo('name'); ?></a>
+            <a class="navbar-brand" href="<?php echo home_url(); ?>"><img src="<?php bloginfo( 'template_url' ); ?>/assets/img/logo-vert.png" alt="<?php bloginfo('name'); ?>"></a>
         </div>
 
         <?php
         wp_nav_menu( array(
-            'theme_location'    => 'mobile',
+            'theme_location'    => 'main',
             //'depth'             => 2,
             'container'         => 'div',
             'container_class'   => 'collapse navbar-collapse navbar-blect-collapse',

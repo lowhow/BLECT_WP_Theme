@@ -1,7 +1,7 @@
 <div class="page-header">
 	<div class="page-header-container container">
 		<div class="page-header-inner">
-			<h1 class="archive-title text-uppercase">
+			<h1 class="archive-title">
 				<?php
 				if ( is_day() ) :
 					printf( __( '%s <small>Daily Archives</small>' ), get_the_date() );

@@ -6,7 +6,8 @@ class ThemeSupport
 	/**
 	 * [add description]
 	 */
-	public function add_theme_support() {
+	public function add_theme_support() 
+	{
 
 		/**
 		 * Switches default core markup for search form, comment form, and comments to output valid HTML5.
@@ -32,6 +33,15 @@ class ThemeSupport
 			'audio', 		// - An audio file or playlist. Could be used for Podcasting.
 			'chat', 		// - A chat transcript
 		) );
+		
+		$args = array(
+			'flex-width'    => true,
+			'width'         => 1200,
+			'flex-height'    => true,
+			'height'        => 800,
+			'default-image' => get_template_directory_uri() . '/assets/img/pinstriped_suit.jpg',
+		);
+		add_theme_support( 'custom-header', $args );
 
 		/**
 		 * Adds RSS feed links to <head> for posts and comments.

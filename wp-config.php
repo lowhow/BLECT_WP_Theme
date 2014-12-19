@@ -74,14 +74,15 @@ define('WPLANG', '');
 /* Custom WordPress URL. */
 define ('WP_CONTENT_DIR', dirname(__FILE__) . '/content');
 define( 'WP_CONTENT_URL', 'http://' . $_SERVER['HTTP_HOST'] . '/content' );
-define( 'UPLOADS',        'data' );
+//define( 'UPLOADS',        'data' );
 
 /* Specify maximum number of Revisions. */
 define( 'WP_POST_REVISIONS', '3' );
 
 /* Updates */
-define( 'DISALLOW_FILE_MODS', true );
+//define( 'DISALLOW_FILE_MODS', true );
 define( 'DISALLOW_FILE_EDIT', true );
+define( 'WP_AUTO_UPDATE_CORE', true );
 
 
 /**

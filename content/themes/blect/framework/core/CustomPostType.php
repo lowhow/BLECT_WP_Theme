@@ -1,6 +1,6 @@
 <?php namespace Framework\Core;
 
-class CustomPostType implements Observer
+abstract class CustomPostType implements Observer
 {
 	private $post_type; // (max. 20 characters, can not contain capital letters or spaces)
 	private $plural_name;

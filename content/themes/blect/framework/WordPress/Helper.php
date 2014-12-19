@@ -2,103 +2,6 @@
 
 class Helper 
 {
-
-	/**
-	 * Load theme text domain.
-	 * @return Helper
-	 */
-	public function load_theme_textdomain()
-	{
-		load_theme_textdomain( FW_TEXTDOMAIN, FW_THEME_LANG_DIR );
-
-		return $this;
-	}
-
-
-	/**
-	 * Remove WordPress Branding generator
-	 * @link http://wpsmackdown.com/wordpress-cleanup-wp-head/
-	 */
-	public function remove_wp_generator() {
-
-		remove_action('wp_head', 'wp_generator');
-
-		return $this;
-	}
-
-
-	/**
-	 * Remove Windows Live Writer Manifest Link
-	 * @link http://wpsmackdown.com/wordpress-cleanup-wp-head/
-	 */
-	public function remove_wlwmanifest_link() {
-
-		remove_action('wp_head', 'wlwmanifest_link');
-
-		return $this;
-	}
-
-
-	/**
-	 * Remove Really Simple Discovert Link
-	 * @link http://wpsmackdown.com/wordpress-cleanup-wp-head/
-	 */
-	public function remove_rsd_link() {
-
-		remove_action('wp_head', 'rsd_link');
-
-		return $this;
-	}
-
-
-	/**
-	 * Remove shortlink from <head>
-	 * @link http://wpsmackdown.com/wordpress-cleanup-wp-head/
-	 */
-	public function remove_shortlink() {
-
-		remove_action('wp_head', 'wp_shortlink_wp_head', 10, 0);
-
-		return $this;
-	}
-
-
-	/**
-	 * Remove previous/next post links from <head>
-	 * @link http://wordpress.stackexchange.com/questions/1507/steps-to-take-to-hide-the-fact-a-site-is-using-wordpress
-	 */
-	public function remove_adjacent_posts_rel_link() {
-
-		remove_action('wp_head', 'adjacent_posts_rel_link_wp_head', 10, 0);
-
-		return $this;
-	}
-
-
-	/**
-	 * Remove Feed Links
-	 * @link http://wordpress.stackexchange.com/questions/1507/steps-to-take-to-hide-the-fact-a-site-is-using-wordpress
-	 */
-	public function remove_feed_links() {
-		
-		remove_action('wp_head', 'feed_links', 2);
-
-		return $this;
-	}
-
-
-	/**
-	 * Remove Feed Links Extra
-	 * @link http://wordpress.stackexchange.com/questions/1507/steps-to-take-to-hide-the-fact-a-site-is-using-wordpress
-	 */
-	public function remove_feed_links_extra() {
-		
-		remove_action('wp_head', 'feed_links_extra', 3);
-
-		return $this;
-	}
-
-
 	/**
 	 * Custom filter to add wp title.
 	 * @param [type] $title
@@ -107,7 +10,6 @@ class Helper
 	 */
 	public function add_wp_title( $title, $sep ) 
 	{
-
 		global $paged, $page;
 
 		$sep = '-';
@@ -133,7 +35,6 @@ class Helper
 		return $title;
 	}
 
-
 	/**
 	 * Add favicon links
 	 */
@@ -146,6 +47,7 @@ class Helper
 
 	  return $this;
 	}
+
 
 
 	/**
@@ -164,7 +66,7 @@ class Helper
   
 	  $showOnHome = 0; // 1 - show breadcrumbs on the homepage, 0 - don't show
 	  $delimiter = ' <span class="delimiter text-muted">/</span> '; // delimiter between crumbs
-	  $home = __( 'Home' ); // text for the 'Home' link
+	  $home = __( 'Home', FW_TEXTDOMAIN ); // text for the 'Home' link
 	  $showCurrent = 1; // 1 - show current post/page title in breadcrumbs, 0 - don't show
 	  $before = '<span class="current">'; // tag before the current crumb
 	  $after = '</span>'; // tag after the current crumb
@@ -294,12 +196,27 @@ class Helper
 	public function t_entry_tag() 
 	{
 		// Translators: used between list items, there is a space after the comma.
-		$tag_list = get_the_tag_list( '', ', ' );
-		if ( $tag_list ) {
-			echo '<span class="tags-links"><i class="fa fa-tags"></i> ' . $tag_list . '</span>';
+		$tag_list = get_the_tag_list( '<span class="tags-links"><i class="fa fa-tags fa-fw"></i> ', ', ', '</span>' );
+		if ( $tag_list ) 
+		{			
+			echo  $tag_list;
 		}
 	}
 
+	/**
+	 * [t_entry_publisher description]
+	 * @return void [description]
+	 */
+	public function t_entry_publisher() 
+	{
+		// Translators: used between list items, there is a space after the comma.
+		global $post;
+		$publisher_list = get_the_term_list( $post->ID, 'publisher', '<span class="tags-links"><i class="fa fa-book fa-fw"></i> ', ', ', '</span>' );
+		if ( $publisher_list ) 
+		{
+			echo $publisher_list;
+		}
+	}
 
 	/**
 	 * [t_entry_cat description]
@@ -310,7 +227,7 @@ class Helper
 		// Translators: used between list items, there is a space after the comma.
 		$categories_list = get_the_category_list( ', ' );
 		if ( $categories_list ) {
-			echo '<span class="categories-links"><i class="fa fa-folder"></i> ' . $categories_list . '</span>';
+			echo '<span class="categories-links"><i class="fa fa-folder fa-fw"></i> ' . $categories_list . '</span>';
 		}
 	}
 
@@ -327,11 +244,57 @@ class Helper
 	 */
 	public function t_entry_author( $echo = true ) {
 		if ( 'post' == get_post_type() ) {
-			printf( '<span class="author vcard"><a class="url fn n" href="%1$s" title="%2$s" rel="author">%3$s</a></span>',
+			printf( '<span class="author vcard"><i class="fa fa-user fa-fw"></i> <a class="url fn n" href="%1$s" title="%2$s" rel="author">%3$s</a></span>',
 				esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ),
 				esc_attr( sprintf( __( ' %s ', FW_TEXTDOMAIN ), get_the_author() ) ),
 				get_the_author()
 			);
 		}
 	}
+
+
+	/**
+	 * [t_pagination description]
+	 * @return [type] [description]
+	 */
+	public function t_pagination()
+	{
+		if ( function_exists( 'wp_pagenavi') )
+		{
+			wp_pagenavi( array( 'options' => array(  
+				'pages_text'					=> '%CURRENT_PAGE% / %TOTAL_PAGES%',
+				'pages_text'					=> '',
+				'current_text'					=> '%PAGE_NUMBER%',
+				'first_text'					=> '1',
+				'last_text'						=> '%TOTAL_PAGES%',
+				'prev_text'						=> '<i class="fa fa-angle-left fa-lg"></i>',
+				'next_text'						=> '<i class="fa fa-angle-right fa-lg"></i>',
+				'dotleft_text' 					=> '...',
+				'dotright_text' 				=> '...',
+				'num_pages'						=> 5,
+				'num_larger_page_numbers'		=> 1,
+				'larger_page_numbers_multiple'	=> 10,
+				'always_show'					=> false,
+				'use_pagenavi_css'				=> false, // not working, use admin settings to set this option.
+				'style' 						=> 1, // 2 = select>option
+
+			) ) );
+		}
+		// echo '<pre>';
+		// var_dump(\PageNavi_Core::$options->get_defaults());
+		// echo '</pre>';
+	}
+
+	/**
+	 * [t_get_the_term_avatar description]
+	 * @return mixed Current value for the specified option. If the specified option does not exist, returns boolean FALSE.
+	 */
+	public function t_get_the_term_avatar()
+	{
+		$queried_object = get_queried_object();
+		$term_id = $queried_object->term_id;
+		return get_option( 'term_' . $term_id . '_meta_avatar' );
+	}
+
+
 }

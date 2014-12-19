@@ -8,44 +8,59 @@
  */
 
 get_header(); ?>
-<div id="primary" class="content-area">
-	<div id="content" class="site-content" role="main">
+<?php get_template_part( 'partials/page-header/search' ); ?>
+<div class="page-body">
+	<div class="page-body-container container">
+		<div class="page-body-inner row">
+			<?php  /* Primary */ ?>
+			<div id="primary" class="content-area col-md-8 margin-bottom-2x">
+				<div id="content" class="site-content " role="main">
+					<?php 
+					if ( have_posts() ) 
+					{ 
 
-		<?php if ( have_posts() ) : ?>
+						while ( have_posts() ) : the_post(); 
+							get_template_part( 'partials/content/searchresults' );
+						endwhile; 
+						$helper->t_pagination();
+					}
+					else
+					{
+						get_template_part( 'partials/content/none' );
+					}
+					?>
+					<script>
 
-		<header class="page-header">
-			<h1 class="page-title"><?php printf( __( '<small>Search result</small> for "%s"' ), get_search_query() ); ?></h1>
-			
-			<div class="text-right text-muted"><small><?php global $wp_query; echo $wp_query->found_posts;	?> results</small></div>
-		</header><?php // END: .page-header ?>
+					highlightWord(document.getElementById( 'content' ), '<?php echo get_search_query(); ?>');
 
+					function highlightWord(root,word){
+					  textNodesUnder(root).forEach(highlightWords);
 
-		<?php /** The loop. */ ?>
-		<?php	while ( have_posts() ) : the_post(); ?>
-
-		<div class="row">
-			<?php get_template_part( 'templates/content-listing', 'search' ); ?>
-		</div>
-
-		<?php endwhile; ?>
-		<?php
-		/**
-		 * Pagination
-		 */	
-		if ( function_exists( 't_pagination' ) ) 	t_pagination();
-		?>
-			<div class="text-right text-muted"><small><?php global $wp_query; echo $wp_query->found_posts;	?> results</small></div>
-		<?php
-
-		else :
-			// If no content, include the "No posts found" template.
-			get_template_part( 'templates/content', 'none' );
-
-		endif;
-	?>
-
-	</div><?php // END: #content ?>
-</div><?php // END: #primary ?>
-
-<?php get_sidebar(); ?>
+					  function textNodesUnder(root){
+					    var walk=document.createTreeWalker(root,NodeFilter.SHOW_TEXT,null,false),
+					        text=[], node;
+					    while(node=walk.nextNode()) text.push(node);
+					    return text;
+					  }
+					    
+					  function highlightWords(n){
+					    for (var i; (i=n.nodeValue.indexOf(word,i)) > -1; n=after){
+					      var after = n.splitText(i+word.length);
+					      var highlighted = n.splitText(i);
+					      var span = document.createElement('mark');
+					      span.className = 'highlighted';
+					      span.appendChild(highlighted);
+					      after.parentNode.insertBefore(span,after);
+					    }
+					  }
+					}
+					</script>
+				</div><?php // END: #content ?>
+			</div><?php // END: #primary ?>
+			<div class="col-sm-4">
+				<?php get_sidebar(); ?>
+			</div>
+		</div><?php // END: .page-body-inner ?>
+	</div><?php // END: .page-body-container ?>
+</div><?php // END: .page-body ?>
 <?php get_footer(); ?>

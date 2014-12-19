@@ -25,6 +25,18 @@
 @skin-gray: 			@gray;
 @skin-gray-light: 		@gray-light;
 @skin-gray-lighter: 	darken( @gray-lighter, 20% );
+@skin-gray-pastel: 		#cad7dc;
+@skin-gray-pastel-dark: #9cb7c0; 		
+@skin-red: 				#F15136;
+@skin-khaki: 			#dfdbd4;
+@skin-khaki-light: 		#ebe3cf;
+@skin-yellow: 			#ffe35e;
+@skin-green-pastel: 	#e3eed3;
+@skin-green: 			#b3bd4a;
+@skin-green-darker: 	#596617;
+@skin-orange: 			#f98222;
+@skin-orange-darker: 	#783a08;
+@skin-magenta: 			#db518a;
 
 
 
@@ -55,7 +67,7 @@
 @font-family-monospace:   Menlo, Monaco, Consolas, "Courier New", monospace;
 @font-family-base:        @font-family-sans-serif;
 
-@font-size-base:          13px;
+@font-size-base:          14px;
 @font-size-large:         ceil((@font-size-base * 1.25)); // ~18px
 @font-size-small:         ceil((@font-size-base * 0.85)); // ~12px
 
@@ -67,7 +79,7 @@
 @font-size-h6:            ceil((@font-size-base * 0.85)); // ~12px
 
 //** Unit-less `line-height` for use in components like buttons.
-@line-height-base:        1.53846154; // 20/13
+@line-height-base:        1.42857143; // 20/13
 //** Computed "line-height" (`font-size` * `line-height`) for use with `margin`, `padding`, etc.
 @line-height-computed:    floor((@font-size-base * @line-height-base) * 2); // ~20px
 
@@ -201,10 +213,10 @@
 @input-border-radius-small:      @border-radius-small;
 
 //** Border color for inputs on focus
-@input-border-focus:             #66afe9;
+@input-border-focus:             @input-border;
 
 //** Placeholder text color
-@input-color-placeholder:        #999;
+@input-color-placeholder:        @skin-gray-lighter;
 
 //** Default `.form-control` height
 @input-height-base:              (@line-height-computed / 2 + (@padding-base-vertical * 2) + 2);
@@ -444,21 +456,21 @@
 //
 //##
 
-@pagination-color:                     @link-color;
+@pagination-color:                     @skin-gray;
 @pagination-bg:                        #fff;
-@pagination-border:                    #ddd;
+@pagination-border:                    transparent;
 
 @pagination-hover-color:               @link-hover-color;
 @pagination-hover-bg:                  @gray-lighter;
-@pagination-hover-border:              #ddd;
+@pagination-hover-border:              transparent;
 
 @pagination-active-color:              #fff;
-@pagination-active-bg:                 @brand-primary;
-@pagination-active-border:             @brand-primary;
+@pagination-active-bg:                 @skin-red;
+@pagination-active-border:             transparent;
 
 @pagination-disabled-color:            @gray-light;
 @pagination-disabled-bg:               #fff;
-@pagination-disabled-border:           #ddd;
+@pagination-disabled-border:           transparent;
 
 
 //== Pager

@@ -3,6 +3,7 @@ function renderMediaUploader( $triggerElement ) {
  
     var file_frame, image_data;
     var receiverElement = $triggerElement.attr( 'data-media-uploader-send-to' );
+    var placeholderElement = $triggerElement.attr( 'data-media-uploader-show-in' );
 
     /**
      * If an instance of file_frame already exists, then we can open it
@@ -31,15 +32,19 @@ function renderMediaUploader( $triggerElement ) {
     })
     .on('select', function(){
     	var attachment = file_frame.state().get('selection').first().toJSON();
+        /** Use this to check properties. */
+        //console.log(attachment);
 
     	jQuery( receiverElement ).val( attachment.url );
-    	/** Use this to check properties. */
-    	//console.log(attachment);
+        if( jQuery( placeholderElement ).length ){
+            var img = jQuery('<img class="aligncenter img-responsive img-thumbnail">');
+            img.attr('src', attachment.url );
+            jQuery( placeholderElement ).html('');
+            img.appendTo( jQuery( placeholderElement ) );
+        }
     });   
- 
     // Now display the actual file_frame
     file_frame.open();
- 
 }
  
 (function( $ ) {
@@ -55,6 +60,22 @@ function renderMediaUploader( $triggerElement ) {
             renderMediaUploader( $(this) );
  
         });
+
+        var $removeButtons = jQuery( '[data-media-uploader-remove]' );
+
+    
+        $removeButtons.each( function( index ){
+            var targetSelector = $( this ).attr( 'data-media-uploader-remove' );
+            var imgPlaceHolderSuffix = '-imgplaceholder';
+            if ( targetSelector !== '' ){
+                $( this ).removeClass( 'hidden' )
+                .bind( 'click', function(e){
+                    e.preventDefault();
+                    $( targetSelector ).val('');
+                    $( targetSelector + imgPlaceHolderSuffix ).html('');
+                });
+            }
+        } );
  
     });
  

@@ -1,4 +1,5 @@
 <?php namespace Framework\Core;
+use Framework\WordPress\Loader as Loader;
 
 class MetaBox
 {	
@@ -9,10 +10,13 @@ class MetaBox
 	private $priority;
 	private $screens;
 	private $callback_args;
+	private $loader;
 	
 
-	public function __construct( $metaboxArgs )
+	public function __construct( Loader $loader, $metaboxArgs )
 	{	
+		$this->loader = $loader;
+
 		if ( !isset( $metaboxArgs ) )
 		{
 			return;
@@ -26,16 +30,9 @@ class MetaBox
 		$this->callback 		= $metaboxArgs['callback'];
 		$this->fields 			= $metaboxArgs['fields'];
 
-		try
-		{
-			add_action( 'add_meta_boxes', array( $this, 'add' ) );
-		} 
-		catch (Exception $e)
-		{
-			echo $e->getMessage();
-		}
-
-		add_action( 'save_post', array( $this, 'save_meta_box_data' ) );
+		$this->loader
+		->add_action( 'add_meta_boxes', $this, 'add' )
+		->add_action( 'save_post', $this, 'save_meta_box_data' );
 	}
 
 

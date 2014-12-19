@@ -13,7 +13,6 @@ class Loader
 	    $this->removable_actions = array();
 	}
 
-
 	/**
 	 * add_action
 	 * @param [type]  $hook          [description]
@@ -28,7 +27,6 @@ class Loader
 
 	    return $this;
 	}
-
 
 	/**
 	 * [add_filter description]
@@ -45,14 +43,19 @@ class Loader
 	    return $this;
 	}
 
-
+	/**
+	 * [remove_action description]
+	 * @param  [type]  $tag                [description]
+	 * @param  [type]  $function_to_remove [description]
+	 * @param  integer $priority           [description]
+	 * @return [type]                      [description]
+	 */
 	public function remove_action( $tag, $function_to_remove, $priority = 10 )
 	{
 		$this->removable_actions[] = array( 'tag' => $tag, 'function_to_remove' => $function_to_remove, 'priority' => $priority );
 
 		return $this;
 	}
-
 
 	/**
 	 * [add description]
@@ -76,10 +79,9 @@ class Loader
 	    return $hooks;
 	}
 
-
 	/**
 	 * [run description]
-	 * @return [type] [description]
+	 * @return object Return this Loader object instance itself
 	 */
 	public function run() 
 	{
@@ -108,9 +110,7 @@ class Loader
 	    }
 
 	    return $this;
-
 	}
-
 
 	/**
 	 * Include files in \include folder
@@ -121,6 +121,20 @@ class Loader
 		foreach($filenames as $file) {
 			include_once( trailingslashit( FW_THEME_FRAMEWORK_INCLUDE_DIR ) . '/' . $file );
 		}
+
+		return $this;
+	}
+
+	/**
+	 * [set_upload_path description]
+	 */
+	public function set_upload_path()
+	{	
+		if ( get_option( 'upload_path' ) !== FW_UPLOAD_DIR )
+			update_option( 'upload_path', FW_UPLOAD_DIR );
+
+		if ( get_option( 'upload_url_path' ) !== FW_UPLOAD_URI )
+			update_option( 'upload_url_path', FW_UPLOAD_URI );
 
 		return $this;
 	}

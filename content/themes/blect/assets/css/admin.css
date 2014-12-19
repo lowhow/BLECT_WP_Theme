@@ -6280,3 +6280,9 @@ button.bootstrap-wrapper .close {
     display: none !important;
   }
 }
+/**
+ * Post Listing
+ */
+th#taxonomy-publisher {
+  width: 10%;
+}

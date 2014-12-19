@@ -262,6 +262,105 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/img\/content\/day-125.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 50658,
+		"inputAbbreviatedPath": "\/img\/content\/day-125.jpg",
+		"outputAbbreviatedPath": "\/img\/content\/day-125.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/content\/feature-f.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 120387,
+		"inputAbbreviatedPath": "\/img\/content\/feature-f.jpg",
+		"outputAbbreviatedPath": "\/img\/content\/feature-f.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/content\/flowers.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 162756,
+		"inputAbbreviatedPath": "\/img\/content\/flowers.jpg",
+		"outputAbbreviatedPath": "\/img\/content\/flowers.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/content\/japanese-tea-monk.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 60721,
+		"inputAbbreviatedPath": "\/img\/content\/japanese-tea-monk.jpg",
+		"outputAbbreviatedPath": "\/img\/content\/japanese-tea-monk.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/content\/main-5.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 126575,
+		"inputAbbreviatedPath": "\/img\/content\/main-5.jpg",
+		"outputAbbreviatedPath": "\/img\/content\/main-5.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/content\/night.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 278360,
+		"inputAbbreviatedPath": "\/img\/content\/night.jpg",
+		"outputAbbreviatedPath": "\/img\/content\/night.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/escheresque_ste.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 493,
+		"inputAbbreviatedPath": "\/img\/escheresque_ste.png",
+		"outputAbbreviatedPath": "\/img\/escheresque_ste.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/huge101onslide.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 12117,
+		"inputAbbreviatedPath": "\/img\/huge101onslide.png",
+		"outputAbbreviatedPath": "\/img\/huge101onslide.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/huge101onslider.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 27437,
+		"inputAbbreviatedPath": "\/img\/huge101onslider.png",
+		"outputAbbreviatedPath": "\/img\/huge101onslider.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/img\/index.php": {
 		"fileType": 8192,
 		"ignore": 0,
@@ -270,6 +369,61 @@
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
+		},
+	"\/img\/logo-vert.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 4670,
+		"inputAbbreviatedPath": "\/img\/logo-vert.png",
+		"outputAbbreviatedPath": "\/img\/logo-vert.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/pinstriped_suit.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 13977,
+		"inputAbbreviatedPath": "\/img\/pinstriped_suit.jpg",
+		"outputAbbreviatedPath": "\/img\/pinstriped_suit.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/samplebg.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 331286,
+		"inputAbbreviatedPath": "\/img\/samplebg.jpg",
+		"outputAbbreviatedPath": "\/img\/samplebg.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/slashbg.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 1015,
+		"inputAbbreviatedPath": "\/img\/slashbg.png",
+		"outputAbbreviatedPath": "\/img\/slashbg.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/taglinebg.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 21568,
+		"inputAbbreviatedPath": "\/img\/taglinebg.png",
+		"outputAbbreviatedPath": "\/img\/taglinebg.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
 		},
 	"\/js\/admin-media-in-metabox.js": {
 		"fileType": 64,
@@ -354,7 +508,7 @@
 	},
 "projectAttributes": {
 	"bowerAbbreviatedPath": "",
-	"displayValue": "BLECT WP assets",
+	"displayValue": "Apple101 assets",
 	"displayValueWasSetByUser": 1,
 	"iconImageName": "compass_darkGray"
 	},

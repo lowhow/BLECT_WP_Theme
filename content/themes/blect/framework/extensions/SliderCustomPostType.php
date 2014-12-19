@@ -1,27 +1,30 @@
 <?php namespace Framework\Extensions;
+use Framework\Core\CustomPostType as CustomPostType;
+use Framework\Core\Observer as Observer;
+use Framework\WordPress\Loader as Loader;
 
-class SliderCustomPostType extends \Framework\Core\CustomPostType  implements \Framework\Core\Observer
+class SliderCustomPostType extends CustomPostType  implements Observer
 {
 	private $post_type; // (max. 20 characters, can not contain capital letters or spaces)
 	private $plural_name;
 	private $slug;
+	private $loader;
 
-
-	public function __construct( $post_type, $plural_name, $slug = null )
+	public function __construct( Loader $loader, $post_type, $plural_name, $slug = null )
 	{
+		$this->loader = $loader;
 		$this->post_type 		= $post_type;
 		$this->plural_name 		= $plural_name;
 		$this->slug				= $slug;
 	}
 
-
 	public function handle() 
 	{	
-		add_action( 'init', array( $this, 'custom_post_type_init' ) );
+		$this->loader
+		->add_action( 'init', $this, 'custom_post_type_init' );
 
 		return $this;
 	}
-
 
 	/**
 	 * Register Post Type

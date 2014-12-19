@@ -19,6 +19,23 @@ class StylesAndScripts {
 		wp_enqueue_style( 'fontawesome', trailingslashit( FW_VENDOR_URI ) . 'fontawesome/css/font-awesome.min.css', array(), null );
 
 		/**
+		 * Kwicks Stylesheet
+		 */
+		wp_enqueue_style( 'kwicks', trailingslashit( FW_VENDOR_URI ) . 'kwicks/jquery.kwicks.min.css', array(), null );
+
+		/**
+		 * OwlCarousel Stylesheet
+		 */
+		wp_enqueue_style( 'owl', trailingslashit( FW_VENDOR_URI ) . 'OwlCarousel/owl-carousel/owl.carousel.css', array(), null );
+		wp_enqueue_style( 'owltheme', trailingslashit( FW_VENDOR_URI ) . 'OwlCarousel/owl-carousel/owl.theme.css', array(), null );
+		// wp_enqueue_style( 'owltrans', trailingslashit( FW_VENDOR_URI ) . 'OwlCarousel/owl-carousel/owl.transitions.css', array(), null );
+
+		/**
+		 * MMenu Stylesheet
+		 */
+		wp_enqueue_style( 'mmenu', trailingslashit( FW_VENDOR_URI ) . 'jQuery.mmenu/src/css/jquery.mmenu.all.css', array(), null );		
+
+		/**
 		 * Link Skin Stylesheet (compiled and minified from LESS)
 		 */
 		wp_enqueue_style( 'vendor', trailingslashit( FW_THEME_ASSETS_CSS_URI ) . 'vendor.css', array(), null );
@@ -62,6 +79,21 @@ class StylesAndScripts {
 		 */
 	  	wp_enqueue_script( 'bs-js', trailingslashit( FW_VENDOR_URI ) . 'bootstrap/dist/js/bootstrap.min.js', array( 'jquery' ), null, TRUE );
 
+	  	/**
+		 * Kwicks Script
+		 */
+		wp_enqueue_script( 'kwicks-js', trailingslashit( FW_VENDOR_URI ) . 'kwicks/jquery.kwicks.min.js', array( 'jquery' ), null, TRUE );
+
+		/**
+		 * Owl Carousel Script
+		 */
+		wp_enqueue_script( 'owl-js', trailingslashit( FW_VENDOR_URI ) . 'OwlCarousel/owl-carousel/owl.carousel.min.js', array( 'jquery' ), null, TRUE );
+
+		/**
+		 * MMenu Script
+		 */
+		wp_enqueue_script( 'mmenu-js', trailingslashit( FW_VENDOR_URI ) . 'jQuery.mmenu/src/js/jquery.mmenu.min.all.js', array( 'jquery' ), null, TRUE );
+
 		/**
 		 * Register Vendor scripts
 		 */
@@ -97,6 +129,9 @@ class StylesAndScripts {
 	 */
 	public function admin_enqueue_scripts() 
 	{
+		wp_enqueue_media();
+		
+		wp_enqueue_script( 'admin-media-in-metabox-js', trailingslashit( FW_THEME_ASSETS_JS_URI ) . 'admin-media-in-metabox.js', array('media-upload'), null );
 		/**
 		 * Boostrap3 Script 
 		 */
@@ -106,6 +141,7 @@ class StylesAndScripts {
 		 * Main Script 
 		 */
 		wp_enqueue_script( 'admin-js', trailingslashit( FW_THEME_ASSETS_JS_URI ) . 'admin.js', array(), null );
+
 	}
 
 }
