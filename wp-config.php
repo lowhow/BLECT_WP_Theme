@@ -16,22 +16,22 @@
 
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
-define('DB_NAME', 'test2db');
+define( 'DB_NAME', 'dbname' );
 
 /** MySQL database username */
-define('DB_USER', 'root');
+define( 'DB_USER', 'root' );
 
 /** MySQL database password */
-define('DB_PASSWORD', '');
+define( 'DB_PASSWORD', 'password' );
 
 /** MySQL hostname */
-define('DB_HOST', 'localhost');
+define( 'DB_HOST', 'localhost' );
 
 /** Database Charset to use in creating database tables. */
-define('DB_CHARSET', 'utf8');
+define( 'DB_CHARSET', 'utf8' );
 
 /** The Database Collate type. Don't change this if in doubt. */
-define('DB_COLLATE', '');
+define( 'DB_COLLATE', '' );
 
 /**#@+
  * Authentication Unique Keys and Salts.
@@ -42,14 +42,14 @@ define('DB_COLLATE', '');
  *
  * @since 2.6.0
  */
-define('AUTH_KEY',         'put your unique phrase here');
-define('SECURE_AUTH_KEY',  'put your unique phrase here');
-define('LOGGED_IN_KEY',    'put your unique phrase here');
-define('NONCE_KEY',        'put your unique phrase here');
-define('AUTH_SALT',        'put your unique phrase here');
-define('SECURE_AUTH_SALT', 'put your unique phrase here');
-define('LOGGED_IN_SALT',   'put your unique phrase here');
-define('NONCE_SALT',       'put your unique phrase here');
+define( 'AUTH_KEY', 'HC :Q!Mc@x3g@sNW_&b@U1SP#i&*d0+jF|%^o>/#iAJE;W--5XC_uOVv%NDL{ 4W' );
+define( 'SECURE_AUTH_KEY', 'A{X)FKC2J-9P4Ux(T-R$%}A+|:.iHTfG{w+[=I#+$R@q*bV}uUTnqbN mKw/%0 X' );
+define( 'LOGGED_IN_KEY', '$eh!.a/|rL<&Lg|RU~WSrCb.oM!>;E):`,Esh`zA:FS6(wv/D*QL+zm^F7DD~Z6|' );
+define( 'NONCE_KEY', 'fH(HcABy)iy$Mr 3?Zn|,6{7I|jFi=LE]$6Y;IjEecTD^A>9CyH{S?m{PT|KNdA}' );
+define( 'AUTH_SALT', 'f>0hq}`1::Stvs9/TeMR5g(Ty?.IK%<C.3^=PtY~!b%L(25yG<x[o*A#Lq,pgDr|' );
+define( 'SECURE_AUTH_SALT', 'B0Vs#al[T_VkpR1moyuv}Z6s=Sa7r}/=#+)U_4OMq}$:v]3Wa.<uWo;EQr`y1}Ea' );
+define( 'LOGGED_IN_SALT', '.+H;4*ej67R $N[FDVmB`i51d+C_ea=0DTRMc1&Rd.E-M>Z[U?sDMWqt<tSMb[^k' );
+define( 'NONCE_SALT', 'C)z--2lk8NGjmk-uZkItg@=N-rD2j6tA5 [Z+x0K1b/7_T&csyJl4ytM9tnw@QRa' );
 
 /**#@-*/
 
@@ -59,7 +59,7 @@ define('NONCE_SALT',       'put your unique phrase here');
  * You can have multiple installations in one database if you give each a unique
  * prefix. Only numbers, letters, and underscores please!
  */
-$table_prefix  = 'wp_';
+$table_prefix = 'wpca_';
 
 /**
  * WordPress Localized Language, defaults to English.
@@ -69,17 +69,17 @@ $table_prefix  = 'wp_';
  * de_DE.mo to wp-content/languages and set WPLANG to 'de_DE' to enable German
  * language support.
  */
-define('WPLANG', '');
+define( 'WPLANG', '' );
 
 /* Custom WordPress URL. */
-define ( 'WP_HOME', 'http://dev.churassociates.com' );
-define ( 'WP_SITEURL', 'http://dev.churassociates.com/cms' );
-define ('WP_CONTENT_DIR', dirname(__FILE__) . '/content');
-define( 'WP_CONTENT_URL', 'http://' . $_SERVER['HTTP_HOST'] . '/content' );
-//define( 'UPLOADS',        'data' );
+define ( 'WP_HOME', 'http://dev.example.com' );
+define ( 'WP_SITEURL', 'http://dev.example.com/cms' );
+define ( 'WP_CONTENT_DIR', dirname( __FILE__ ) . '/content' );
+define ( 'WP_CONTENT_URL', WP_HOME . '/content' );
+
 
 /* Specify maximum number of Revisions. */
-define( 'WP_POST_REVISIONS', '3' );
+define( 'WP_POST_REVISIONS', '1' );
 
 /* Updates */
 //define( 'DISALLOW_FILE_MODS', true );
@@ -94,13 +94,14 @@ define( 'WP_AUTO_UPDATE_CORE', true );
  * It is strongly recommended that plugin and theme developers use WP_DEBUG
  * in their development environments.
  */
-define('WP_DEBUG', true);
+define( 'WP_DEBUG', true );
 
 /* That's all, stop editing! Happy blogging. */
 
 /** Absolute path to the WordPress directory. */
-if ( !defined('ABSPATH') )
-	define('ABSPATH', dirname(__FILE__) . '/');
+if ( ! defined( 'ABSPATH' ) ) {
+	define( 'ABSPATH', dirname( __FILE__ ) . '/' );
+}
 
 /** Sets up WordPress vars and included files. */
-require_once(ABSPATH . 'wp-settings.php');
+require_once( ABSPATH . 'wp-settings.php' );
