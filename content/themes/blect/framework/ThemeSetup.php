@@ -68,7 +68,7 @@ class ThemeSetup
 		->attach( new Extensions\SliderMetaBoxes( $this->loader ) )
 		->attach( new Extensions\Apple101\PublisherTaxonomy( $this->loader ) )
 		->attach( new Extensions\Apple101\Shortcode() )
-		->attach( new Extensions\Apple101\Ads( $this->loader ) )
+//		->attach( new Extensions\Apple101\Ads( $this->loader ) )
 		->attach( new Extensions\Apple101\Quicktags( $this->loader ) )
 		->attach( new Extensions\Apple101\UserAvatar( $this->loader ) )
 		->load();

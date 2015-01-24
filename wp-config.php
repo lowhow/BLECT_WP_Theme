@@ -72,6 +72,8 @@ $table_prefix  = 'wp_';
 define('WPLANG', '');
 
 /* Custom WordPress URL. */
+define ( 'WP_HOME', 'http://dev.churassociates.com' );
+define ( 'WP_SITEURL', 'http://dev.churassociates.com/cms' );
 define ('WP_CONTENT_DIR', dirname(__FILE__) . '/content');
 define( 'WP_CONTENT_URL', 'http://' . $_SERVER['HTTP_HOST'] . '/content' );
 //define( 'UPLOADS',        'data' );

@@ -15,10 +15,10 @@
 
         <div class="collapse navbar-collapse navbar-blect ">
             <ul class="nav navbar-nav pull-right">
-                <li><a href="http://www.facebook.com/apple101commy"><i class="fa fa-fw fa-lg fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fa fa-fw fa-lg fa-facebook"></i></a></li>
                 <li><a href="#"><i class="fa fa-fw fa-lg fa-rss"></i></a></li>
-                <li><a href="http://twitter.com/apple101commy"><i class="fa fa-fw fa-lg fa-twitter"></i></a></li>
-                <li><a href="http://www.youtube.com/apple101commy"><i class="fa fa-fw fa-lg fa-youtube"></i></a></li>
+                <li><a href="#"><i class="fa fa-fw fa-lg fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fa fa-fw fa-lg fa-youtube"></i></a></li>
             </ul>
         </div>
     </div>

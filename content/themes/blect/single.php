@@ -45,59 +45,6 @@ get_header(); ?>
 		                <?php endif; ?>
 					<?php endwhile; /** END: The loop */ ?>		
 				</div><?php // END: #content ?>
-
-				<div class="adblock">
-					<?php if ( wp_is_mobile() ) : ?>
-					<!-- 101 Mobile Banner Bottom -->
-					<div id='div-gpt-ad-1418719160721-5' style='width:320px; height:50px;' class="center-block">
-					<script type='text/javascript'>
-					googletag.cmd.push(function() { googletag.display('div-gpt-ad-1418719160721-5'); });
-					</script>
-					</div>
-					<?php else : ?>
-					<!-- 101 Leaderboard Bottom -->
-					<div id='div-gpt-ad-1418719160721-0' style='width:728px; height:90px;' class="center-block">
-					<script type='text/javascript'>
-					googletag.cmd.push(function() { googletag.display('div-gpt-ad-1418719160721-0'); });
-					</script>
-					</div>
-					<?php endif; ?>
-				</div>
-				
-				<div id="related" class="floating away">
-					<div class="related-header text-center">
-						<span class="close pull-left">&times;</span>
-						<h4>相关文章</h4>
-					</div>
-					<?php
-					$tags = wp_get_post_tags( $post->ID, array( 'fields' => 'ids') );
-					$module_query_args = array( 
-						'posts_per_page'	=> '4',
-						'tag__in'			=> $tags,
-						'post__not_in' 		=> array( $post->ID ),
-						'category__not_in' 	=> array(/*Uncategorized*/1, /*Publisher*/3, /*站内公告*/195, /*101奖礼*/1395, /*101信箱*/16374),
-						'orderby' 			=> 'rand',
-						'fw_heading'		=> array(
-							'title' => '相关文章',
-						)
-					);
-					include(locate_template('partials/module/listing-grid-sm2col.php')); 
-					?>
-				</div>
-				<?php
-				$cats = wp_get_post_categories( $post->ID, array( 'fields' => 'ids') );
-				$module_query_args = array( 
-					'posts_per_page'	=> '4',
-					'post__not_in' 		=> array( $post->ID ),
-					'category__in' 		=> $cats,
-					'orderby' 			=> 'rand',
-					'fw_heading'		=> array(
-						'title' => '<i class="fa fa-files-o fa fw"></i> 其他文章',
-					)
-				);
-				include(locate_template('partials/module/listing-grid-sm2col.php')); 
-				?>
-				<?php get_template_part( 'partials/module/listing-wpp' ); ?>
 			</div><?php // END: #primary ?>
 			<div class="col-md-4 margin-top-1x"><?php get_sidebar(); ?></div>
 		</div><?php // END: .page-body-inner ?>

@@ -18,23 +18,6 @@ WebFontConfig = {
 
 
 $(function() {
-	/////////////////
-	// FlexSlider //
-	/////////////////
-	jQuery('.owlcarousel').owlCarousel({
-		singleItem: true,
-	});
-	////////////
-	// Kwicks //
-	////////////
-	var $kwicksContainer = jQuery('.kwicks').kwicks({
-		maxSize			: '50%',
-		selectOnClick	: false,
-		duration 		: 350,
-		behavior		: 'menu',
-		delayMouseIn	: 500
-	});
-
 	///////////
 	// MMenu //
 	///////////
@@ -44,6 +27,7 @@ $(function() {
            	zposition : "front"
         }
 	});
+
 
 	/////////////////////
 	// Related Module //
