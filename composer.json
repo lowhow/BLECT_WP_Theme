@@ -34,7 +34,10 @@
 		    "fancyguy/webroot-installer": "1.0.0",
 		    "wpackagist-plugin/akismet": "dev-trunk",
 		    "wpackagist-plugin/regenerate-thumbnails": ">=2.2",
-		    "wpackagist-plugin/wp-pagenavi": ">=2.8"
+		    "wpackagist-plugin/wp-pagenavi": ">=2.8",
+		    "wpackagist-plugin/advanced-custom-fields": ">=4",
+		    "wpackagist-plugin/members": ">=0.2.4",
+		    "wpackagist-plugin/wordpress-importer": ">=0.6"
     },
     "extra": 
     {

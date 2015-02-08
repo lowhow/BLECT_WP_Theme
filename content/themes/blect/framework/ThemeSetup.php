@@ -23,7 +23,7 @@ class ThemeSetup
 		$this->shortcode = new WordPress\Shortcode;
 		$this->extensionLoader = new Core\ExtensionLoader;
 		$this->textDomain = new WordPress\TextDomain;
-		$this->oEmbed = new Wordpress\OEmbed;
+		$this->oEmbed = new WordPress\OEmbed;
 
 		global $helper; 
 		$helper = $this->helper;
