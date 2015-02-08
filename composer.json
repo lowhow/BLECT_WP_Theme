@@ -37,7 +37,8 @@
 		    "wpackagist-plugin/wp-pagenavi": ">=2.8",
 		    "wpackagist-plugin/advanced-custom-fields": ">=4",
 		    "wpackagist-plugin/members": ">=0.2.4",
-		    "wpackagist-plugin/wordpress-importer": ">=0.6"
+		    "wpackagist-plugin/wordpress-importer": ">=0.6",
+		    "wpackagist-plugin/blade": ">=0.3"
     },
     "extra": 
     {
