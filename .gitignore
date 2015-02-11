@@ -30,6 +30,21 @@ dwsync.xml
 *.komodoproject
 .komodotools
 
+# WordPress
+*.log
+.htaccess
+sitemap.xml
+sitemap.xml.gz
+wp-config.php
+wp-content/advanced-cache.php
+wp-content/backup-db/
+wp-content/backups/
+wp-content/blogs.dir/
+wp-content/cache/
+wp-content/upgrade/
+wp-content/uploads/
+wp-content/wp-cache-config.php
+
 # Folders to ignore
 .hg
 .svn
@@ -39,3 +54,10 @@ intermediate
 cache
 
 vendor/
+assets/
+!assets/img/
+!assets/index.php
+assets/img/*
+!assets/img/index.php
+data/
+!data/index.php

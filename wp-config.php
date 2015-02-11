@@ -59,7 +59,7 @@ define( 'NONCE_SALT', 'C)z--2lk8NGjmk-uZkItg@=N-rD2j6tA5 [Z+x0K1b/7_T&csyJl4ytM9
  * You can have multiple installations in one database if you give each a unique
  * prefix. Only numbers, letters, and underscores please!
  */
-$table_prefix = 'wpca_';
+$table_prefix = 'wp_';
 
 /**
  * WordPress Localized Language, defaults to English.
@@ -77,6 +77,11 @@ define ( 'WP_SITEURL', 'http://dev.example.com/cms' );
 define ( 'WP_CONTENT_DIR', dirname( __FILE__ ) . '/content' );
 define ( 'WP_CONTENT_URL', WP_HOME . '/content' );
 
+/**
+ * Never use define ( 'UPLOADS', 'wp-content/uploads' );
+ * Defining upload path and url here will always be relative to the WP_SITEURL and ABSPATH,
+ * which is not how we want to structure our wp setup.
+ **/
 
 /* Specify maximum number of Revisions. */
 define( 'WP_POST_REVISIONS', '1' );
