@@ -71,6 +71,7 @@ class ThemeSetup
 //		->attach( new Extensions\Apple101\Ads( $this->loader ) )
 		->attach( new Extensions\Apple101\Quicktags( $this->loader ) )
 		->attach( new Extensions\Apple101\UserAvatar( $this->loader ) )
+		->attach( new Extensions\Woocommerce( $this->loader ) )
 		->load();
 
 		$this->loader->run();
