@@ -30,7 +30,7 @@
     ],
     "require": 
     {
-		    "wordpress": "4.1",
+		    "wordpress": "4.1.1",
 		    "fancyguy/webroot-installer": "1.0.0",
 		    "wpackagist-plugin/akismet": "dev-trunk",
 		    "wpackagist-plugin/regenerate-thumbnails": ">=2.2",
