@@ -122,8 +122,10 @@ class StylesAndScripts
         wp_enqueue_script('admin-media-in-metabox-js', trailingslashit(FW_THEME_ASSETS_JS_URI) . 'admin-media-in-metabox.js', array('media-upload'), null);
         /**
          * Boostrap3 Script
+         *
+         * Becareful when enable this script. Might kill plugin page.
          */
-        wp_enqueue_script('bs3-js', trailingslashit(FW_VENDOR_URI) . '/bootstrap/dist/js/bootstrap.min.js', array(), null);
+        //wp_enqueue_script('bs3-js', trailingslashit(FW_VENDOR_URI) . '/bootstrap/dist/js/bootstrap.min.js', array(), null);
 
         /**
          * Main Script
