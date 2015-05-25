@@ -87,8 +87,8 @@ define ( 'WP_CONTENT_URL', WP_HOME . '/content' );
 define( 'WP_POST_REVISIONS', '1' );
 
 /* Updates */
-//define( 'DISALLOW_FILE_MODS', true );
-define( 'DISALLOW_FILE_EDIT', true );
+//define( 'DISALLOW_FILE_MODS', true ); // turn on in live site
+//define( 'DISALLOW_FILE_EDIT', true ); // turn on in live site
 define( 'WP_AUTO_UPDATE_CORE', true );
 
 
@@ -99,7 +99,7 @@ define( 'WP_AUTO_UPDATE_CORE', true );
  * It is strongly recommended that plugin and theme developers use WP_DEBUG
  * in their development environments.
  */
-define( 'WP_DEBUG', true );
+define( 'WP_DEBUG', true ); // turn off in live site
 
 /* That's all, stop editing! Happy blogging. */
 
