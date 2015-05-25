@@ -14,7 +14,8 @@
 <!--<![endif]-->
 <head>
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
-	<meta name="viewport" content="width=device-width">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 	<title><?php wp_title( '|', true, 'right' ); ?></title>
 	<link rel="profile" href="http://gmpg.org/xfn/11">
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
@@ -32,33 +33,6 @@
 		<?php get_template_part( 'partials/nav/blect', 'default' ); ?>
 		<?php // get_template_part( 'partials/nav/blect', 'division' ); ?>
 		<?php // get_template_part( 'partials/nav/blect', 'cut-in' ); ?>
-		<?php
-		global $helper;
-		global $post_to_exclude;
-		$post_to_exclude = array();
-		if ( is_home() ) {
-			/**
-			 * Get latest 4 post with thumbnail.
-			 */
-			$module_query_args = array(
-				'posts_per_page' => '4',
-				'category__in'   => array(/*蘋果快报*/
-					33, /*游人悠事*/
-					34, /*镜头开讲*/
-					35, /*蘋果看世界*/
-					36, /*我の旅游梦*/
-					37, /*旅游文化*/
-					38, /*旅游资讯站*/
-					39, /*世界大不同*/
-					40, /*游民の日记*/
-					41, /*地图人生*/
-					42, /*101推荐*/
-					43
-				),
-				'meta_key'       => '_thumbnail_id',
-			);
-		}
-		?>
 	</header><?php // END: #masthead ?>
 
 	<div id="main">
