@@ -1,6 +1,6 @@
 {
 "CodeKitInfo": "This is a CodeKit 2.x project configuration file. It is designed to sync project settings across multiple machines. MODIFYING THE CONTENTS OF THIS FILE IS A POOR LIFE DECISION. If you do so, you will likely cause CodeKit to crash. This file is not useful unless accompanied by the project that created it in CodeKit 2. This file is not backwards-compatible with CodeKit 1.x. For more information, see: http:\/\/incident57.com\/codekit",
-"creatorBuild": "18917",
+"creatorBuild": "19022",
 "files": {
 	"\/assets\/img\/index.php": {
 		"fileType": 8192,
@@ -5012,15 +5012,6 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/cms\/wp-content\/themes\/twentyfifteen\/genericons\/example.html": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/cms\/wp-content\/themes\/twentyfifteen\/genericons\/example.html",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
 	"\/cms\/wp-content\/themes\/twentyfifteen\/genericons\/genericons.css": {
 		"fileType": 16,
 		"ignore": 0,
@@ -5430,15 +5421,6 @@
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/cms\/wp-content\/themes\/twentyfourteen\/functions.php",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/cms\/wp-content\/themes\/twentyfourteen\/genericons\/example.html": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/cms\/wp-content\/themes\/twentyfourteen\/genericons\/example.html",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
@@ -6326,15 +6308,6 @@
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/cms\/wp-content\/themes\/twentythirteen\/functions.php",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/cms\/wp-content\/themes\/twentythirteen\/genericons\/example.html": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/cms\/wp-content\/themes\/twentythirteen\/genericons\/example.html",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
@@ -13901,7 +13874,7 @@
 		},
 	"\/content\/themes\/blect\/assets\/css\/admin.css": {
 		"fileType": 16,
-		"ignore": 1,
+		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/content\/themes\/blect\/assets\/css\/admin.css",
 		"outputAbbreviatedPath": "No Output Path",
@@ -13910,17 +13883,17 @@
 		},
 	"\/content\/themes\/blect\/assets\/css\/less\/admin.less": {
 		"allowInsecureImports": 0,
-		"createSourceMap": 1,
+		"createSourceMap": 0,
 		"disableJavascript": 0,
 		"fileType": 1,
 		"ieCompatibility": 1,
-		"ignore": 0,
-		"ignoreWasSetByUser": 1,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/content\/themes\/blect\/assets\/css\/less\/admin.less",
-		"outputAbbreviatedPath": "\/content\/themes\/blect\/assets\/css\/admin.css",
+		"outputAbbreviatedPath": "\/content\/themes\/blect\/assets\/css\/css\/admin.css",
 		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 1,
-		"outputStyle": 2,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
 		"relativeURLS": 0,
 		"shouldRunAutoprefixer": 0,
 		"shouldRunBless": 0,
@@ -14050,17 +14023,17 @@
 		},
 	"\/content\/themes\/blect\/assets\/css\/less\/vendor.less": {
 		"allowInsecureImports": 0,
-		"createSourceMap": 0,
+		"createSourceMap": 1,
 		"disableJavascript": 0,
 		"fileType": 1,
 		"ieCompatibility": 1,
-		"ignore": 0,
-		"ignoreWasSetByUser": 1,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/content\/themes\/blect\/assets\/css\/less\/vendor.less",
-		"outputAbbreviatedPath": "\/content\/themes\/blect\/assets\/css\/vendor.css",
+		"outputAbbreviatedPath": "\/content\/themes\/blect\/assets\/css\/css\/vendor.css",
 		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 1,
-		"outputStyle": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
 		"relativeURLS": 0,
 		"shouldRunAutoprefixer": 0,
 		"shouldRunBless": 0,
@@ -14099,7 +14072,7 @@
 		},
 	"\/content\/themes\/blect\/assets\/css\/vendor.css": {
 		"fileType": 16,
-		"ignore": 1,
+		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/content\/themes\/blect\/assets\/css\/vendor.css",
 		"outputAbbreviatedPath": "No Output Path",
@@ -14155,6 +14128,17 @@
 		"initialSize": 1232,
 		"inputAbbreviatedPath": "\/content\/themes\/blect\/assets\/img\/apple-touch-icon-72-precomposed.png",
 		"outputAbbreviatedPath": "\/content\/themes\/blect\/assets\/img\/apple-touch-icon-72-precomposed.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/content\/themes\/blect\/assets\/img\/content\/day-125.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 27368,
+		"inputAbbreviatedPath": "\/content\/themes\/blect\/assets\/img\/content\/day-125.jpg",
+		"outputAbbreviatedPath": "\/content\/themes\/blect\/assets\/img\/content\/day-125.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -14278,6 +14262,17 @@
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
+	"\/content\/themes\/blect\/assets\/js\/application.min.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/content\/themes\/blect\/assets\/js\/application.min.js",
+		"outputAbbreviatedPath": "\/content\/themes\/blect\/assets\/js\/min\/application.min-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
 	"\/content\/themes\/blect\/assets\/js\/index.php": {
 		"fileType": 8192,
 		"ignore": 0,
@@ -14295,7 +14290,7 @@
 		"outputAbbreviatedPath": "\/content\/themes\/blect\/assets\/js\/vendor.min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 1,
-		"outputStyle": 1,
+		"outputStyle": 2,
 		"syntaxCheckerStyle": 1
 		},
 	"\/content\/themes\/blect\/author.php": {
@@ -14456,6 +14451,15 @@
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/content\/themes\/blect\/framework\/Extensions\/PrettyPhoto.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/content\/themes\/blect\/framework\/Extensions\/Projectname\/Router.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/content\/themes\/blect\/framework\/Extensions\/Projectname\/Router.php",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
@@ -18711,6 +18715,26 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/vendor\/fontawesome\/less\/animated.less": {
+		"allowInsecureImports": 0,
+		"createSourceMap": 0,
+		"disableJavascript": 0,
+		"fileType": 1,
+		"ieCompatibility": 1,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/fontawesome\/less\/animated.less",
+		"outputAbbreviatedPath": "\/vendor\/fontawesome\/css\/animated.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"relativeURLS": 0,
+		"shouldRunAutoprefixer": 0,
+		"shouldRunBless": 0,
+		"strictImports": 0,
+		"strictMath": 0,
+		"strictUnits": 0
+		},
 	"\/vendor\/fontawesome\/less\/bordered-pulled.less": {
 		"allowInsecureImports": 0,
 		"createSourceMap": 0,
@@ -18741,26 +18765,6 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/vendor\/fontawesome\/less\/core.less",
 		"outputAbbreviatedPath": "\/vendor\/fontawesome\/css\/core.css",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 0,
-		"relativeURLS": 0,
-		"shouldRunAutoprefixer": 0,
-		"shouldRunBless": 0,
-		"strictImports": 0,
-		"strictMath": 0,
-		"strictUnits": 0
-		},
-	"\/vendor\/fontawesome\/less\/extras.less": {
-		"allowInsecureImports": 0,
-		"createSourceMap": 0,
-		"disableJavascript": 0,
-		"fileType": 1,
-		"ieCompatibility": 1,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/vendor\/fontawesome\/less\/extras.less",
-		"outputAbbreviatedPath": "\/vendor\/fontawesome\/css\/extras.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
@@ -18931,26 +18935,6 @@
 		"strictMath": 0,
 		"strictUnits": 0
 		},
-	"\/vendor\/fontawesome\/less\/spinning.less": {
-		"allowInsecureImports": 0,
-		"createSourceMap": 0,
-		"disableJavascript": 0,
-		"fileType": 1,
-		"ieCompatibility": 1,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/vendor\/fontawesome\/less\/spinning.less",
-		"outputAbbreviatedPath": "\/vendor\/fontawesome\/css\/spinning.css",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 0,
-		"relativeURLS": 0,
-		"shouldRunAutoprefixer": 0,
-		"shouldRunBless": 0,
-		"strictImports": 0,
-		"strictMath": 0,
-		"strictUnits": 0
-		},
 	"\/vendor\/fontawesome\/less\/stacked.less": {
 		"allowInsecureImports": 0,
 		"createSourceMap": 0,
@@ -18991,6 +18975,22 @@
 		"strictMath": 0,
 		"strictUnits": 0
 		},
+	"\/vendor\/fontawesome\/scss\/_animated.scss": {
+		"createSourceMap": 0,
+		"debugStyle": 0,
+		"decimalPrecision": 10,
+		"fileType": 4,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/fontawesome\/scss\/_animated.scss",
+		"outputAbbreviatedPath": "\/vendor\/fontawesome\/css\/_animated.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"shouldRunAutoprefixer": 0,
+		"shouldRunBless": 0,
+		"useLibsass": 0
+		},
 	"\/vendor\/fontawesome\/scss\/_bordered-pulled.scss": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
@@ -19016,22 +19016,6 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/vendor\/fontawesome\/scss\/_core.scss",
 		"outputAbbreviatedPath": "\/vendor\/fontawesome\/css\/_core.css",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 0,
-		"shouldRunAutoprefixer": 0,
-		"shouldRunBless": 0,
-		"useLibsass": 0
-		},
-	"\/vendor\/fontawesome\/scss\/_extras.scss": {
-		"createSourceMap": 0,
-		"debugStyle": 0,
-		"decimalPrecision": 10,
-		"fileType": 4,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/vendor\/fontawesome\/scss\/_extras.scss",
-		"outputAbbreviatedPath": "\/vendor\/fontawesome\/css\/_extras.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
@@ -19151,22 +19135,6 @@
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
-	"\/vendor\/fontawesome\/scss\/_spinning.scss": {
-		"createSourceMap": 0,
-		"debugStyle": 0,
-		"decimalPrecision": 10,
-		"fileType": 4,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/vendor\/fontawesome\/scss\/_spinning.scss",
-		"outputAbbreviatedPath": "\/vendor\/fontawesome\/css\/_spinning.css",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 0,
-		"shouldRunAutoprefixer": 0,
-		"shouldRunBless": 0,
-		"useLibsass": 0
-		},
 	"\/vendor\/fontawesome\/scss\/_stacked.scss": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
@@ -19235,6 +19203,26 @@
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1
 		},
+	"\/vendor\/jQuery.mmenu\/composer.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/jQuery.mmenu\/composer.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/vendor\/jQuery.mmenu\/composer-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
+		},
+	"\/vendor\/jQuery.mmenu\/demo\/advanced.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/jQuery.mmenu\/demo\/advanced.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
 	"\/vendor\/jQuery.mmenu\/demo\/css\/demo.css": {
 		"fileType": 16,
 		"ignore": 0,
@@ -19253,11 +19241,11 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/vendor\/jQuery.mmenu\/demo\/jqmobile\/page3.html": {
+	"\/vendor\/jQuery.mmenu\/demo\/default.html": {
 		"fileType": 8192,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/vendor\/jQuery.mmenu\/demo\/jqmobile\/page3.html",
+		"inputAbbreviatedPath": "\/vendor\/jQuery.mmenu\/demo\/default.html",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
@@ -19271,167 +19259,554 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/vendor\/jQuery.mmenu\/src\/css\/addons\/jquery.mmenu.buttonbars.css": {
+	"\/vendor\/jQuery.mmenu\/dist\/css\/addons\/jquery.mmenu.autoheight.css": {
 		"fileType": 16,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/vendor\/jQuery.mmenu\/src\/css\/addons\/jquery.mmenu.buttonbars.css",
+		"inputAbbreviatedPath": "\/vendor\/jQuery.mmenu\/dist\/css\/addons\/jquery.mmenu.autoheight.css",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/vendor\/jQuery.mmenu\/src\/css\/addons\/jquery.mmenu.counters.css": {
+	"\/vendor\/jQuery.mmenu\/dist\/css\/addons\/jquery.mmenu.counters.css": {
 		"fileType": 16,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/vendor\/jQuery.mmenu\/src\/css\/addons\/jquery.mmenu.counters.css",
+		"inputAbbreviatedPath": "\/vendor\/jQuery.mmenu\/dist\/css\/addons\/jquery.mmenu.counters.css",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/vendor\/jQuery.mmenu\/src\/css\/addons\/jquery.mmenu.dragopen.css": {
+	"\/vendor\/jQuery.mmenu\/dist\/css\/addons\/jquery.mmenu.dividers.css": {
 		"fileType": 16,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/vendor\/jQuery.mmenu\/src\/css\/addons\/jquery.mmenu.dragopen.css",
+		"inputAbbreviatedPath": "\/vendor\/jQuery.mmenu\/dist\/css\/addons\/jquery.mmenu.dividers.css",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/vendor\/jQuery.mmenu\/src\/css\/addons\/jquery.mmenu.footer.css": {
+	"\/vendor\/jQuery.mmenu\/dist\/css\/addons\/jquery.mmenu.dragopen.css": {
 		"fileType": 16,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/vendor\/jQuery.mmenu\/src\/css\/addons\/jquery.mmenu.footer.css",
+		"inputAbbreviatedPath": "\/vendor\/jQuery.mmenu\/dist\/css\/addons\/jquery.mmenu.dragopen.css",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/vendor\/jQuery.mmenu\/src\/css\/addons\/jquery.mmenu.header.css": {
+	"\/vendor\/jQuery.mmenu\/dist\/css\/addons\/jquery.mmenu.navbars.css": {
 		"fileType": 16,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/vendor\/jQuery.mmenu\/src\/css\/addons\/jquery.mmenu.header.css",
+		"inputAbbreviatedPath": "\/vendor\/jQuery.mmenu\/dist\/css\/addons\/jquery.mmenu.navbars.css",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/vendor\/jQuery.mmenu\/src\/css\/addons\/jquery.mmenu.labels.css": {
+	"\/vendor\/jQuery.mmenu\/dist\/css\/addons\/jquery.mmenu.offcanvas.css": {
 		"fileType": 16,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/vendor\/jQuery.mmenu\/src\/css\/addons\/jquery.mmenu.labels.css",
+		"inputAbbreviatedPath": "\/vendor\/jQuery.mmenu\/dist\/css\/addons\/jquery.mmenu.offcanvas.css",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/vendor\/jQuery.mmenu\/src\/css\/addons\/jquery.mmenu.offcanvas.css": {
+	"\/vendor\/jQuery.mmenu\/dist\/css\/addons\/jquery.mmenu.searchfield.css": {
 		"fileType": 16,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/vendor\/jQuery.mmenu\/src\/css\/addons\/jquery.mmenu.offcanvas.css",
+		"inputAbbreviatedPath": "\/vendor\/jQuery.mmenu\/dist\/css\/addons\/jquery.mmenu.searchfield.css",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/vendor\/jQuery.mmenu\/src\/css\/addons\/jquery.mmenu.searchfield.css": {
+	"\/vendor\/jQuery.mmenu\/dist\/css\/addons\/jquery.mmenu.sectionindexer.css": {
 		"fileType": 16,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/vendor\/jQuery.mmenu\/src\/css\/addons\/jquery.mmenu.searchfield.css",
+		"inputAbbreviatedPath": "\/vendor\/jQuery.mmenu\/dist\/css\/addons\/jquery.mmenu.sectionindexer.css",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/vendor\/jQuery.mmenu\/src\/css\/addons\/jquery.mmenu.toggles.css": {
+	"\/vendor\/jQuery.mmenu\/dist\/css\/addons\/jquery.mmenu.toggles.css": {
 		"fileType": 16,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/vendor\/jQuery.mmenu\/src\/css\/addons\/jquery.mmenu.toggles.css",
+		"inputAbbreviatedPath": "\/vendor\/jQuery.mmenu\/dist\/css\/addons\/jquery.mmenu.toggles.css",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/vendor\/jQuery.mmenu\/src\/css\/extensions\/jquery.mmenu.effects.css": {
+	"\/vendor\/jQuery.mmenu\/dist\/css\/extensions\/jquery.mmenu.borderstyle.css": {
 		"fileType": 16,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/vendor\/jQuery.mmenu\/src\/css\/extensions\/jquery.mmenu.effects.css",
+		"inputAbbreviatedPath": "\/vendor\/jQuery.mmenu\/dist\/css\/extensions\/jquery.mmenu.borderstyle.css",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/vendor\/jQuery.mmenu\/src\/css\/extensions\/jquery.mmenu.fullscreen.css": {
+	"\/vendor\/jQuery.mmenu\/dist\/css\/extensions\/jquery.mmenu.effects.css": {
 		"fileType": 16,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/vendor\/jQuery.mmenu\/src\/css\/extensions\/jquery.mmenu.fullscreen.css",
+		"inputAbbreviatedPath": "\/vendor\/jQuery.mmenu\/dist\/css\/extensions\/jquery.mmenu.effects.css",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/vendor\/jQuery.mmenu\/src\/css\/extensions\/jquery.mmenu.iconbar.css": {
+	"\/vendor\/jQuery.mmenu\/dist\/css\/extensions\/jquery.mmenu.fullscreen.css": {
 		"fileType": 16,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/vendor\/jQuery.mmenu\/src\/css\/extensions\/jquery.mmenu.iconbar.css",
+		"inputAbbreviatedPath": "\/vendor\/jQuery.mmenu\/dist\/css\/extensions\/jquery.mmenu.fullscreen.css",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/vendor\/jQuery.mmenu\/src\/css\/extensions\/jquery.mmenu.positioning.css": {
+	"\/vendor\/jQuery.mmenu\/dist\/css\/extensions\/jquery.mmenu.iconbar.css": {
 		"fileType": 16,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/vendor\/jQuery.mmenu\/src\/css\/extensions\/jquery.mmenu.positioning.css",
+		"inputAbbreviatedPath": "\/vendor\/jQuery.mmenu\/dist\/css\/extensions\/jquery.mmenu.iconbar.css",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/vendor\/jQuery.mmenu\/src\/css\/extensions\/jquery.mmenu.themes.css": {
+	"\/vendor\/jQuery.mmenu\/dist\/css\/extensions\/jquery.mmenu.multiline.css": {
 		"fileType": 16,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/vendor\/jQuery.mmenu\/src\/css\/extensions\/jquery.mmenu.themes.css",
+		"inputAbbreviatedPath": "\/vendor\/jQuery.mmenu\/dist\/css\/extensions\/jquery.mmenu.multiline.css",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/vendor\/jQuery.mmenu\/src\/css\/extensions\/jquery.mmenu.widescreen.css": {
+	"\/vendor\/jQuery.mmenu\/dist\/css\/extensions\/jquery.mmenu.pageshadow.css": {
 		"fileType": 16,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/vendor\/jQuery.mmenu\/src\/css\/extensions\/jquery.mmenu.widescreen.css",
+		"inputAbbreviatedPath": "\/vendor\/jQuery.mmenu\/dist\/css\/extensions\/jquery.mmenu.pageshadow.css",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/vendor\/jQuery.mmenu\/src\/css\/jquery.mmenu.all.css": {
+	"\/vendor\/jQuery.mmenu\/dist\/css\/extensions\/jquery.mmenu.positioning.css": {
 		"fileType": 16,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/jQuery.mmenu\/dist\/css\/extensions\/jquery.mmenu.positioning.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/jQuery.mmenu\/dist\/css\/extensions\/jquery.mmenu.themes.css": {
+		"fileType": 16,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/jQuery.mmenu\/dist\/css\/extensions\/jquery.mmenu.themes.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/jQuery.mmenu\/dist\/css\/extensions\/jquery.mmenu.widescreen.css": {
+		"fileType": 16,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/jQuery.mmenu\/dist\/css\/extensions\/jquery.mmenu.widescreen.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/jQuery.mmenu\/dist\/css\/jquery.mmenu.all.css": {
+		"fileType": 16,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/jQuery.mmenu\/dist\/css\/jquery.mmenu.all.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/jQuery.mmenu\/dist\/css\/jquery.mmenu.css": {
+		"fileType": 16,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/jQuery.mmenu\/dist\/css\/jquery.mmenu.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/jQuery.mmenu\/dist\/css\/jquery.mmenu.oncanvas.css": {
+		"fileType": 16,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/jQuery.mmenu\/dist\/css\/jquery.mmenu.oncanvas.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/jQuery.mmenu\/dist\/js\/addons\/jquery.mmenu.autoheight.min.js": {
+		"fileType": 64,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/vendor\/jQuery.mmenu\/src\/css\/jquery.mmenu.all.css",
+		"inputAbbreviatedPath": "\/vendor\/jQuery.mmenu\/dist\/js\/addons\/jquery.mmenu.autoheight.min.js",
+		"outputAbbreviatedPath": "\/vendor\/jQuery.mmenu\/dist\/js\/addons\/min\/jquery.mmenu.autoheight.min-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/vendor\/jQuery.mmenu\/dist\/js\/addons\/jquery.mmenu.backbutton.min.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/jQuery.mmenu\/dist\/js\/addons\/jquery.mmenu.backbutton.min.js",
+		"outputAbbreviatedPath": "\/vendor\/jQuery.mmenu\/dist\/js\/addons\/min\/jquery.mmenu.backbutton.min-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/vendor\/jQuery.mmenu\/dist\/js\/addons\/jquery.mmenu.counters.min.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/jQuery.mmenu\/dist\/js\/addons\/jquery.mmenu.counters.min.js",
+		"outputAbbreviatedPath": "\/vendor\/jQuery.mmenu\/dist\/js\/addons\/min\/jquery.mmenu.counters.min-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/vendor\/jQuery.mmenu\/dist\/js\/addons\/jquery.mmenu.dividers.min.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/jQuery.mmenu\/dist\/js\/addons\/jquery.mmenu.dividers.min.js",
+		"outputAbbreviatedPath": "\/vendor\/jQuery.mmenu\/dist\/js\/addons\/min\/jquery.mmenu.dividers.min-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/vendor\/jQuery.mmenu\/dist\/js\/addons\/jquery.mmenu.dragopen.min.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/jQuery.mmenu\/dist\/js\/addons\/jquery.mmenu.dragopen.min.js",
+		"outputAbbreviatedPath": "\/vendor\/jQuery.mmenu\/dist\/js\/addons\/min\/jquery.mmenu.dragopen.min-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/vendor\/jQuery.mmenu\/dist\/js\/addons\/jquery.mmenu.fixedelements.min.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/jQuery.mmenu\/dist\/js\/addons\/jquery.mmenu.fixedelements.min.js",
+		"outputAbbreviatedPath": "\/vendor\/jQuery.mmenu\/dist\/js\/addons\/min\/jquery.mmenu.fixedelements.min-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/vendor\/jQuery.mmenu\/dist\/js\/addons\/jquery.mmenu.navbars.min.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/jQuery.mmenu\/dist\/js\/addons\/jquery.mmenu.navbars.min.js",
+		"outputAbbreviatedPath": "\/vendor\/jQuery.mmenu\/dist\/js\/addons\/min\/jquery.mmenu.navbars.min-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/vendor\/jQuery.mmenu\/dist\/js\/addons\/jquery.mmenu.offcanvas.min.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/jQuery.mmenu\/dist\/js\/addons\/jquery.mmenu.offcanvas.min.js",
+		"outputAbbreviatedPath": "\/vendor\/jQuery.mmenu\/dist\/js\/addons\/min\/jquery.mmenu.offcanvas.min-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/vendor\/jQuery.mmenu\/dist\/js\/addons\/jquery.mmenu.searchfield.min.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/jQuery.mmenu\/dist\/js\/addons\/jquery.mmenu.searchfield.min.js",
+		"outputAbbreviatedPath": "\/vendor\/jQuery.mmenu\/dist\/js\/addons\/min\/jquery.mmenu.searchfield.min-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/vendor\/jQuery.mmenu\/dist\/js\/addons\/jquery.mmenu.sectionindexer.min.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/jQuery.mmenu\/dist\/js\/addons\/jquery.mmenu.sectionindexer.min.js",
+		"outputAbbreviatedPath": "\/vendor\/jQuery.mmenu\/dist\/js\/addons\/min\/jquery.mmenu.sectionindexer.min-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/vendor\/jQuery.mmenu\/dist\/js\/addons\/jquery.mmenu.toggles.min.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/jQuery.mmenu\/dist\/js\/addons\/jquery.mmenu.toggles.min.js",
+		"outputAbbreviatedPath": "\/vendor\/jQuery.mmenu\/dist\/js\/addons\/min\/jquery.mmenu.toggles.min-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/vendor\/jQuery.mmenu\/dist\/js\/jquery.mmenu.min.all.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/jQuery.mmenu\/dist\/js\/jquery.mmenu.min.all.js",
+		"outputAbbreviatedPath": "\/vendor\/jQuery.mmenu\/dist\/js\/min\/jquery.mmenu.min.all-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/vendor\/jQuery.mmenu\/dist\/js\/jquery.mmenu.min.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/jQuery.mmenu\/dist\/js\/jquery.mmenu.min.js",
+		"outputAbbreviatedPath": "\/vendor\/jQuery.mmenu\/dist\/js\/min\/jquery.mmenu.min-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/vendor\/jQuery.mmenu\/dist\/js\/jquery.mmenu.oncanvas.min.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/jQuery.mmenu\/dist\/js\/jquery.mmenu.oncanvas.min.js",
+		"outputAbbreviatedPath": "\/vendor\/jQuery.mmenu\/dist\/js\/min\/jquery.mmenu.oncanvas.min-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/vendor\/jQuery.mmenu\/dist\/js_umd\/_inc\/affix.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/jQuery.mmenu\/dist\/js_umd\/_inc\/affix.js",
+		"outputAbbreviatedPath": "\/vendor\/jQuery.mmenu\/dist\/js_umd\/_inc\/min\/affix-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/vendor\/jQuery.mmenu\/dist\/js_umd\/_inc\/prefix.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/jQuery.mmenu\/dist\/js_umd\/_inc\/prefix.js",
+		"outputAbbreviatedPath": "\/vendor\/jQuery.mmenu\/dist\/js_umd\/_inc\/min\/prefix-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/vendor\/jQuery.mmenu\/dist\/js_umd\/addons\/jquery.mmenu.autoheight.umd.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/jQuery.mmenu\/dist\/js_umd\/addons\/jquery.mmenu.autoheight.umd.js",
+		"outputAbbreviatedPath": "\/vendor\/jQuery.mmenu\/dist\/js_umd\/addons\/min\/jquery.mmenu.autoheight.umd-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/vendor\/jQuery.mmenu\/dist\/js_umd\/addons\/jquery.mmenu.backbutton.umd.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/jQuery.mmenu\/dist\/js_umd\/addons\/jquery.mmenu.backbutton.umd.js",
+		"outputAbbreviatedPath": "\/vendor\/jQuery.mmenu\/dist\/js_umd\/addons\/min\/jquery.mmenu.backbutton.umd-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/vendor\/jQuery.mmenu\/dist\/js_umd\/addons\/jquery.mmenu.counters.umd.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/jQuery.mmenu\/dist\/js_umd\/addons\/jquery.mmenu.counters.umd.js",
+		"outputAbbreviatedPath": "\/vendor\/jQuery.mmenu\/dist\/js_umd\/addons\/min\/jquery.mmenu.counters.umd-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/vendor\/jQuery.mmenu\/dist\/js_umd\/addons\/jquery.mmenu.dividers.umd.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/jQuery.mmenu\/dist\/js_umd\/addons\/jquery.mmenu.dividers.umd.js",
+		"outputAbbreviatedPath": "\/vendor\/jQuery.mmenu\/dist\/js_umd\/addons\/min\/jquery.mmenu.dividers.umd-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/vendor\/jQuery.mmenu\/dist\/js_umd\/addons\/jquery.mmenu.dragopen.umd.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/jQuery.mmenu\/dist\/js_umd\/addons\/jquery.mmenu.dragopen.umd.js",
+		"outputAbbreviatedPath": "\/vendor\/jQuery.mmenu\/dist\/js_umd\/addons\/min\/jquery.mmenu.dragopen.umd-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/vendor\/jQuery.mmenu\/dist\/js_umd\/addons\/jquery.mmenu.fixedelements.umd.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/jQuery.mmenu\/dist\/js_umd\/addons\/jquery.mmenu.fixedelements.umd.js",
+		"outputAbbreviatedPath": "\/vendor\/jQuery.mmenu\/dist\/js_umd\/addons\/min\/jquery.mmenu.fixedelements.umd-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/vendor\/jQuery.mmenu\/dist\/js_umd\/addons\/jquery.mmenu.navbars.umd.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/jQuery.mmenu\/dist\/js_umd\/addons\/jquery.mmenu.navbars.umd.js",
+		"outputAbbreviatedPath": "\/vendor\/jQuery.mmenu\/dist\/js_umd\/addons\/min\/jquery.mmenu.navbars.umd-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/vendor\/jQuery.mmenu\/dist\/js_umd\/addons\/jquery.mmenu.offcanvas.umd.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/jQuery.mmenu\/dist\/js_umd\/addons\/jquery.mmenu.offcanvas.umd.js",
+		"outputAbbreviatedPath": "\/vendor\/jQuery.mmenu\/dist\/js_umd\/addons\/min\/jquery.mmenu.offcanvas.umd-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/vendor\/jQuery.mmenu\/dist\/js_umd\/addons\/jquery.mmenu.searchfield.umd.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/jQuery.mmenu\/dist\/js_umd\/addons\/jquery.mmenu.searchfield.umd.js",
+		"outputAbbreviatedPath": "\/vendor\/jQuery.mmenu\/dist\/js_umd\/addons\/min\/jquery.mmenu.searchfield.umd-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/vendor\/jQuery.mmenu\/dist\/js_umd\/addons\/jquery.mmenu.toggles.umd.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/jQuery.mmenu\/dist\/js_umd\/addons\/jquery.mmenu.toggles.umd.js",
+		"outputAbbreviatedPath": "\/vendor\/jQuery.mmenu\/dist\/js_umd\/addons\/min\/jquery.mmenu.toggles.umd-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/vendor\/jQuery.mmenu\/dist\/js_umd\/jquery.mmenu.oncanvas.umd.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/jQuery.mmenu\/dist\/js_umd\/jquery.mmenu.oncanvas.umd.js",
+		"outputAbbreviatedPath": "\/vendor\/jQuery.mmenu\/dist\/js_umd\/min\/jquery.mmenu.oncanvas.umd-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/vendor\/jQuery.mmenu\/dist\/js_umd\/jquery.mmenu.umd.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/jQuery.mmenu\/dist\/js_umd\/jquery.mmenu.umd.js",
+		"outputAbbreviatedPath": "\/vendor\/jQuery.mmenu\/dist\/js_umd\/min\/jquery.mmenu.umd-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/vendor\/jQuery.mmenu\/index.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/jQuery.mmenu\/index.html",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/vendor\/jQuery.mmenu\/src\/css\/jquery.mmenu.css": {
-		"fileType": 16,
+	"\/vendor\/jQuery.mmenu\/mmenu.jquery.json": {
+		"fileType": 524288,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/vendor\/jQuery.mmenu\/src\/css\/jquery.mmenu.css",
-		"outputAbbreviatedPath": "No Output Path",
+		"inputAbbreviatedPath": "\/vendor\/jQuery.mmenu\/mmenu.jquery.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/vendor\/jQuery.mmenu\/mmenu.jquery-min.json",
 		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
 		},
-	"\/vendor\/jQuery.mmenu\/src\/css\/jquery.mmenu.oncanvas.css": {
-		"fileType": 16,
+	"\/vendor\/jQuery.mmenu\/package.json": {
+		"fileType": 524288,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/vendor\/jQuery.mmenu\/src\/css\/jquery.mmenu.oncanvas.css",
-		"outputAbbreviatedPath": "No Output Path",
+		"inputAbbreviatedPath": "\/vendor\/jQuery.mmenu\/package.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/vendor\/jQuery.mmenu\/package-min.json",
 		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
+		},
+	"\/vendor\/jQuery.mmenu\/README.md": {
+		"criticStyle": 0,
+		"enableFootnotes": 1,
+		"enableLabels": 1,
+		"enableSmartQuotes": 1,
+		"escapeLineBreaks": 0,
+		"fileType": 4096,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/jQuery.mmenu\/README.md",
+		"maskEmailAddresses": 1,
+		"outputAbbreviatedPath": "\/vendor\/jQuery.mmenu\/README.html",
+		"outputFormat": 0,
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"parseMetadata": 1,
+		"processHTML": 0,
+		"randomFootnoteNumbers": 0,
+		"useCompatibilityMode": 0
 		},
 	"\/vendor\/jQuery.mmenu\/src\/js\/addons\/addon-template.js": {
 		"fileType": 64,
@@ -19444,23 +19819,23 @@
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/vendor\/jQuery.mmenu\/src\/js\/addons\/jquery.mmenu.buttonbars.js": {
+	"\/vendor\/jQuery.mmenu\/src\/js\/addons\/jquery.mmenu.autoheight.js": {
 		"fileType": 64,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/vendor\/jQuery.mmenu\/src\/js\/addons\/jquery.mmenu.buttonbars.js",
-		"outputAbbreviatedPath": "\/vendor\/jQuery.mmenu\/src\/js\/addons\/min\/jquery.mmenu.buttonbars-min.js",
+		"inputAbbreviatedPath": "\/vendor\/jQuery.mmenu\/src\/js\/addons\/jquery.mmenu.autoheight.js",
+		"outputAbbreviatedPath": "\/vendor\/jQuery.mmenu\/src\/js\/addons\/min\/jquery.mmenu.autoheight-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/vendor\/jQuery.mmenu\/src\/js\/addons\/jquery.mmenu.buttonbars.min.js": {
+	"\/vendor\/jQuery.mmenu\/src\/js\/addons\/jquery.mmenu.backbutton.js": {
 		"fileType": 64,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/vendor\/jQuery.mmenu\/src\/js\/addons\/jquery.mmenu.buttonbars.min.js",
-		"outputAbbreviatedPath": "\/vendor\/jQuery.mmenu\/src\/js\/addons\/min\/jquery.mmenu.buttonbars.min-min.js",
+		"inputAbbreviatedPath": "\/vendor\/jQuery.mmenu\/src\/js\/addons\/jquery.mmenu.backbutton.js",
+		"outputAbbreviatedPath": "\/vendor\/jQuery.mmenu\/src\/js\/addons\/min\/jquery.mmenu.backbutton-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
@@ -19477,12 +19852,12 @@
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/vendor\/jQuery.mmenu\/src\/js\/addons\/jquery.mmenu.counters.min.js": {
+	"\/vendor\/jQuery.mmenu\/src\/js\/addons\/jquery.mmenu.dividers.js": {
 		"fileType": 64,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/vendor\/jQuery.mmenu\/src\/js\/addons\/jquery.mmenu.counters.min.js",
-		"outputAbbreviatedPath": "\/vendor\/jQuery.mmenu\/src\/js\/addons\/min\/jquery.mmenu.counters.min-min.js",
+		"inputAbbreviatedPath": "\/vendor\/jQuery.mmenu\/src\/js\/addons\/jquery.mmenu.dividers.js",
+		"outputAbbreviatedPath": "\/vendor\/jQuery.mmenu\/src\/js\/addons\/min\/jquery.mmenu.dividers-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
@@ -19499,17 +19874,6 @@
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/vendor\/jQuery.mmenu\/src\/js\/addons\/jquery.mmenu.dragopen.min.js": {
-		"fileType": 64,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/vendor\/jQuery.mmenu\/src\/js\/addons\/jquery.mmenu.dragopen.min.js",
-		"outputAbbreviatedPath": "\/vendor\/jQuery.mmenu\/src\/js\/addons\/min\/jquery.mmenu.dragopen.min-min.js",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 1,
-		"syntaxCheckerStyle": 1
-		},
 	"\/vendor\/jQuery.mmenu\/src\/js\/addons\/jquery.mmenu.fixedelements.js": {
 		"fileType": 64,
 		"ignore": 1,
@@ -19521,78 +19885,12 @@
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/vendor\/jQuery.mmenu\/src\/js\/addons\/jquery.mmenu.fixedelements.min.js": {
+	"\/vendor\/jQuery.mmenu\/src\/js\/addons\/jquery.mmenu.navbars.js": {
 		"fileType": 64,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/vendor\/jQuery.mmenu\/src\/js\/addons\/jquery.mmenu.fixedelements.min.js",
-		"outputAbbreviatedPath": "\/vendor\/jQuery.mmenu\/src\/js\/addons\/min\/jquery.mmenu.fixedelements.min-min.js",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 1,
-		"syntaxCheckerStyle": 1
-		},
-	"\/vendor\/jQuery.mmenu\/src\/js\/addons\/jquery.mmenu.footer.js": {
-		"fileType": 64,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/vendor\/jQuery.mmenu\/src\/js\/addons\/jquery.mmenu.footer.js",
-		"outputAbbreviatedPath": "\/vendor\/jQuery.mmenu\/src\/js\/addons\/min\/jquery.mmenu.footer-min.js",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 1,
-		"syntaxCheckerStyle": 1
-		},
-	"\/vendor\/jQuery.mmenu\/src\/js\/addons\/jquery.mmenu.footer.min.js": {
-		"fileType": 64,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/vendor\/jQuery.mmenu\/src\/js\/addons\/jquery.mmenu.footer.min.js",
-		"outputAbbreviatedPath": "\/vendor\/jQuery.mmenu\/src\/js\/addons\/min\/jquery.mmenu.footer.min-min.js",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 1,
-		"syntaxCheckerStyle": 1
-		},
-	"\/vendor\/jQuery.mmenu\/src\/js\/addons\/jquery.mmenu.header.js": {
-		"fileType": 64,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/vendor\/jQuery.mmenu\/src\/js\/addons\/jquery.mmenu.header.js",
-		"outputAbbreviatedPath": "\/vendor\/jQuery.mmenu\/src\/js\/addons\/min\/jquery.mmenu.header-min.js",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 1,
-		"syntaxCheckerStyle": 1
-		},
-	"\/vendor\/jQuery.mmenu\/src\/js\/addons\/jquery.mmenu.header.min.js": {
-		"fileType": 64,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/vendor\/jQuery.mmenu\/src\/js\/addons\/jquery.mmenu.header.min.js",
-		"outputAbbreviatedPath": "\/vendor\/jQuery.mmenu\/src\/js\/addons\/min\/jquery.mmenu.header.min-min.js",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 1,
-		"syntaxCheckerStyle": 1
-		},
-	"\/vendor\/jQuery.mmenu\/src\/js\/addons\/jquery.mmenu.labels.js": {
-		"fileType": 64,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/vendor\/jQuery.mmenu\/src\/js\/addons\/jquery.mmenu.labels.js",
-		"outputAbbreviatedPath": "\/vendor\/jQuery.mmenu\/src\/js\/addons\/min\/jquery.mmenu.labels-min.js",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 1,
-		"syntaxCheckerStyle": 1
-		},
-	"\/vendor\/jQuery.mmenu\/src\/js\/addons\/jquery.mmenu.labels.min.js": {
-		"fileType": 64,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/vendor\/jQuery.mmenu\/src\/js\/addons\/jquery.mmenu.labels.min.js",
-		"outputAbbreviatedPath": "\/vendor\/jQuery.mmenu\/src\/js\/addons\/min\/jquery.mmenu.labels.min-min.js",
+		"inputAbbreviatedPath": "\/vendor\/jQuery.mmenu\/src\/js\/addons\/jquery.mmenu.navbars.js",
+		"outputAbbreviatedPath": "\/vendor\/jQuery.mmenu\/src\/js\/addons\/min\/jquery.mmenu.navbars-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
@@ -19609,17 +19907,6 @@
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/vendor\/jQuery.mmenu\/src\/js\/addons\/jquery.mmenu.offcanvas.min.js": {
-		"fileType": 64,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/vendor\/jQuery.mmenu\/src\/js\/addons\/jquery.mmenu.offcanvas.min.js",
-		"outputAbbreviatedPath": "\/vendor\/jQuery.mmenu\/src\/js\/addons\/min\/jquery.mmenu.offcanvas.min-min.js",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 1,
-		"syntaxCheckerStyle": 1
-		},
 	"\/vendor\/jQuery.mmenu\/src\/js\/addons\/jquery.mmenu.searchfield.js": {
 		"fileType": 64,
 		"ignore": 1,
@@ -19631,12 +19918,12 @@
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/vendor\/jQuery.mmenu\/src\/js\/addons\/jquery.mmenu.searchfield.min.js": {
+	"\/vendor\/jQuery.mmenu\/src\/js\/addons\/jquery.mmenu.sectionindexer.js": {
 		"fileType": 64,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/vendor\/jQuery.mmenu\/src\/js\/addons\/jquery.mmenu.searchfield.min.js",
-		"outputAbbreviatedPath": "\/vendor\/jQuery.mmenu\/src\/js\/addons\/min\/jquery.mmenu.searchfield.min-min.js",
+		"inputAbbreviatedPath": "\/vendor\/jQuery.mmenu\/src\/js\/addons\/jquery.mmenu.sectionindexer.js",
+		"outputAbbreviatedPath": "\/vendor\/jQuery.mmenu\/src\/js\/addons\/min\/jquery.mmenu.sectionindexer-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
@@ -19653,34 +19940,23 @@
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/vendor\/jQuery.mmenu\/src\/js\/addons\/jquery.mmenu.toggles.min.js": {
+	"\/vendor\/jQuery.mmenu\/src\/js\/jquery.mmenu.debugger.js": {
 		"fileType": 64,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/vendor\/jQuery.mmenu\/src\/js\/addons\/jquery.mmenu.toggles.min.js",
-		"outputAbbreviatedPath": "\/vendor\/jQuery.mmenu\/src\/js\/addons\/min\/jquery.mmenu.toggles.min-min.js",
+		"inputAbbreviatedPath": "\/vendor\/jQuery.mmenu\/src\/js\/jquery.mmenu.debugger.js",
+		"outputAbbreviatedPath": "\/vendor\/jQuery.mmenu\/src\/js\/min\/jquery.mmenu.debugger-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/vendor\/jQuery.mmenu\/src\/js\/jquery.mmenu.min.all.js": {
+	"\/vendor\/jQuery.mmenu\/src\/js\/jquery.mmenu.js": {
 		"fileType": 64,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/vendor\/jQuery.mmenu\/src\/js\/jquery.mmenu.min.all.js",
-		"outputAbbreviatedPath": "\/vendor\/jQuery.mmenu\/src\/js\/min\/jquery.mmenu.min.all-min.js",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 1,
-		"syntaxCheckerStyle": 1
-		},
-	"\/vendor\/jQuery.mmenu\/src\/js\/jquery.mmenu.min.js": {
-		"fileType": 64,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/vendor\/jQuery.mmenu\/src\/js\/jquery.mmenu.min.js",
-		"outputAbbreviatedPath": "\/vendor\/jQuery.mmenu\/src\/js\/min\/jquery.mmenu.min-min.js",
+		"inputAbbreviatedPath": "\/vendor\/jQuery.mmenu\/src\/js\/jquery.mmenu.js",
+		"outputAbbreviatedPath": "\/vendor\/jQuery.mmenu\/src\/js\/min\/jquery.mmenu-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
@@ -19697,191 +19973,79 @@
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/vendor\/jQuery.mmenu\/src\/js\/jquery.mmenu.oncanvas.min.js": {
-		"fileType": 64,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/vendor\/jQuery.mmenu\/src\/js\/jquery.mmenu.oncanvas.min.js",
-		"outputAbbreviatedPath": "\/vendor\/jQuery.mmenu\/src\/js\/min\/jquery.mmenu.oncanvas.min-min.js",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 1,
-		"syntaxCheckerStyle": 1
-		},
-	"\/vendor\/jQuery.mmenu\/src\/js\/umd\/addons\/jquery.mmenu.buttonbars.umd.js": {
-		"fileType": 64,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/vendor\/jQuery.mmenu\/src\/js\/umd\/addons\/jquery.mmenu.buttonbars.umd.js",
-		"outputAbbreviatedPath": "\/vendor\/jQuery.mmenu\/src\/js\/umd\/addons\/min\/jquery.mmenu.buttonbars.umd-min.js",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 1,
-		"syntaxCheckerStyle": 1
-		},
-	"\/vendor\/jQuery.mmenu\/src\/js\/umd\/addons\/jquery.mmenu.counters.umd.js": {
-		"fileType": 64,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/vendor\/jQuery.mmenu\/src\/js\/umd\/addons\/jquery.mmenu.counters.umd.js",
-		"outputAbbreviatedPath": "\/vendor\/jQuery.mmenu\/src\/js\/umd\/addons\/min\/jquery.mmenu.counters.umd-min.js",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 1,
-		"syntaxCheckerStyle": 1
-		},
-	"\/vendor\/jQuery.mmenu\/src\/js\/umd\/addons\/jquery.mmenu.dragopen.umd.js": {
-		"fileType": 64,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/vendor\/jQuery.mmenu\/src\/js\/umd\/addons\/jquery.mmenu.dragopen.umd.js",
-		"outputAbbreviatedPath": "\/vendor\/jQuery.mmenu\/src\/js\/umd\/addons\/min\/jquery.mmenu.dragopen.umd-min.js",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 1,
-		"syntaxCheckerStyle": 1
-		},
-	"\/vendor\/jQuery.mmenu\/src\/js\/umd\/addons\/jquery.mmenu.fixedelements.umd.js": {
-		"fileType": 64,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/vendor\/jQuery.mmenu\/src\/js\/umd\/addons\/jquery.mmenu.fixedelements.umd.js",
-		"outputAbbreviatedPath": "\/vendor\/jQuery.mmenu\/src\/js\/umd\/addons\/min\/jquery.mmenu.fixedelements.umd-min.js",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 1,
-		"syntaxCheckerStyle": 1
-		},
-	"\/vendor\/jQuery.mmenu\/src\/js\/umd\/addons\/jquery.mmenu.footer.umd.js": {
-		"fileType": 64,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/vendor\/jQuery.mmenu\/src\/js\/umd\/addons\/jquery.mmenu.footer.umd.js",
-		"outputAbbreviatedPath": "\/vendor\/jQuery.mmenu\/src\/js\/umd\/addons\/min\/jquery.mmenu.footer.umd-min.js",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 1,
-		"syntaxCheckerStyle": 1
-		},
-	"\/vendor\/jQuery.mmenu\/src\/js\/umd\/addons\/jquery.mmenu.header.umd.js": {
-		"fileType": 64,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/vendor\/jQuery.mmenu\/src\/js\/umd\/addons\/jquery.mmenu.header.umd.js",
-		"outputAbbreviatedPath": "\/vendor\/jQuery.mmenu\/src\/js\/umd\/addons\/min\/jquery.mmenu.header.umd-min.js",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 1,
-		"syntaxCheckerStyle": 1
-		},
-	"\/vendor\/jQuery.mmenu\/src\/js\/umd\/addons\/jquery.mmenu.labels.umd.js": {
-		"fileType": 64,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/vendor\/jQuery.mmenu\/src\/js\/umd\/addons\/jquery.mmenu.labels.umd.js",
-		"outputAbbreviatedPath": "\/vendor\/jQuery.mmenu\/src\/js\/umd\/addons\/min\/jquery.mmenu.labels.umd-min.js",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 1,
-		"syntaxCheckerStyle": 1
-		},
-	"\/vendor\/jQuery.mmenu\/src\/js\/umd\/addons\/jquery.mmenu.offcanvas.umd.js": {
-		"fileType": 64,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/vendor\/jQuery.mmenu\/src\/js\/umd\/addons\/jquery.mmenu.offcanvas.umd.js",
-		"outputAbbreviatedPath": "\/vendor\/jQuery.mmenu\/src\/js\/umd\/addons\/min\/jquery.mmenu.offcanvas.umd-min.js",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 1,
-		"syntaxCheckerStyle": 1
-		},
-	"\/vendor\/jQuery.mmenu\/src\/js\/umd\/addons\/jquery.mmenu.searchfield.umd.js": {
-		"fileType": 64,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/vendor\/jQuery.mmenu\/src\/js\/umd\/addons\/jquery.mmenu.searchfield.umd.js",
-		"outputAbbreviatedPath": "\/vendor\/jQuery.mmenu\/src\/js\/umd\/addons\/min\/jquery.mmenu.searchfield.umd-min.js",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 1,
-		"syntaxCheckerStyle": 1
-		},
-	"\/vendor\/jQuery.mmenu\/src\/js\/umd\/addons\/jquery.mmenu.toggles.umd.js": {
-		"fileType": 64,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/vendor\/jQuery.mmenu\/src\/js\/umd\/addons\/jquery.mmenu.toggles.umd.js",
-		"outputAbbreviatedPath": "\/vendor\/jQuery.mmenu\/src\/js\/umd\/addons\/min\/jquery.mmenu.toggles.umd-min.js",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 1,
-		"syntaxCheckerStyle": 1
-		},
-	"\/vendor\/jQuery.mmenu\/src\/js\/umd\/inc\/umd_affix.js": {
-		"fileType": 64,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/vendor\/jQuery.mmenu\/src\/js\/umd\/inc\/umd_affix.js",
-		"outputAbbreviatedPath": "\/vendor\/jQuery.mmenu\/src\/js\/umd\/inc\/min\/umd_affix-min.js",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 1,
-		"syntaxCheckerStyle": 1
-		},
-	"\/vendor\/jQuery.mmenu\/src\/js\/umd\/inc\/umd_prefix.js": {
-		"fileType": 64,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/vendor\/jQuery.mmenu\/src\/js\/umd\/inc\/umd_prefix.js",
-		"outputAbbreviatedPath": "\/vendor\/jQuery.mmenu\/src\/js\/umd\/inc\/min\/umd_prefix-min.js",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 1,
-		"syntaxCheckerStyle": 1
-		},
-	"\/vendor\/jQuery.mmenu\/src\/js\/umd\/jquery.mmenu.oncanvas.umd.js": {
-		"fileType": 64,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/vendor\/jQuery.mmenu\/src\/js\/umd\/jquery.mmenu.oncanvas.umd.js",
-		"outputAbbreviatedPath": "\/vendor\/jQuery.mmenu\/src\/js\/umd\/min\/jquery.mmenu.oncanvas.umd-min.js",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 1,
-		"syntaxCheckerStyle": 1
-		},
-	"\/vendor\/jQuery.mmenu\/src\/js\/umd\/jquery.mmenu.umd.all.js": {
-		"fileType": 64,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/vendor\/jQuery.mmenu\/src\/js\/umd\/jquery.mmenu.umd.all.js",
-		"outputAbbreviatedPath": "\/vendor\/jQuery.mmenu\/src\/js\/umd\/min\/jquery.mmenu.umd.all-min.js",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 1,
-		"syntaxCheckerStyle": 1
-		},
-	"\/vendor\/jQuery.mmenu\/src\/js\/umd\/jquery.mmenu.umd.js": {
-		"fileType": 64,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/vendor\/jQuery.mmenu\/src\/js\/umd\/jquery.mmenu.umd.js",
-		"outputAbbreviatedPath": "\/vendor\/jQuery.mmenu\/src\/js\/umd\/min\/jquery.mmenu.umd-min.js",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 1,
-		"syntaxCheckerStyle": 1
-		},
-	"\/vendor\/jQuery.mmenu\/src\/scss\/addons\/jquery.mmenu.buttonbars.scss": {
+	"\/vendor\/jQuery.mmenu\/src\/scss\/_inc\/_colors.scss": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
 		"decimalPrecision": 10,
 		"fileType": 4,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/vendor\/jQuery.mmenu\/src\/scss\/addons\/jquery.mmenu.buttonbars.scss",
-		"outputAbbreviatedPath": "\/vendor\/jQuery.mmenu\/src\/scss\/css\/jquery.mmenu.buttonbars.css",
+		"inputAbbreviatedPath": "\/vendor\/jQuery.mmenu\/src\/scss\/_inc\/_colors.scss",
+		"outputAbbreviatedPath": "\/vendor\/jQuery.mmenu\/src\/scss\/css\/_colors.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"shouldRunAutoprefixer": 0,
+		"shouldRunBless": 0,
+		"useLibsass": 0
+		},
+	"\/vendor\/jQuery.mmenu\/src\/scss\/_inc\/_mixins.scss": {
+		"createSourceMap": 0,
+		"debugStyle": 0,
+		"decimalPrecision": 10,
+		"fileType": 4,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/jQuery.mmenu\/src\/scss\/_inc\/_mixins.scss",
+		"outputAbbreviatedPath": "\/vendor\/jQuery.mmenu\/src\/scss\/css\/_mixins.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"shouldRunAutoprefixer": 0,
+		"shouldRunBless": 0,
+		"useLibsass": 0
+		},
+	"\/vendor\/jQuery.mmenu\/src\/scss\/_inc\/_sizing.scss": {
+		"createSourceMap": 0,
+		"debugStyle": 0,
+		"decimalPrecision": 10,
+		"fileType": 4,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/jQuery.mmenu\/src\/scss\/_inc\/_sizing.scss",
+		"outputAbbreviatedPath": "\/vendor\/jQuery.mmenu\/src\/scss\/css\/_sizing.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"shouldRunAutoprefixer": 0,
+		"shouldRunBless": 0,
+		"useLibsass": 0
+		},
+	"\/vendor\/jQuery.mmenu\/src\/scss\/_inc\/_variables.scss": {
+		"createSourceMap": 0,
+		"debugStyle": 0,
+		"decimalPrecision": 10,
+		"fileType": 4,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/jQuery.mmenu\/src\/scss\/_inc\/_variables.scss",
+		"outputAbbreviatedPath": "\/vendor\/jQuery.mmenu\/src\/scss\/css\/_variables.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"shouldRunAutoprefixer": 0,
+		"shouldRunBless": 0,
+		"useLibsass": 0
+		},
+	"\/vendor\/jQuery.mmenu\/src\/scss\/addons\/jquery.mmenu.autoheight.scss": {
+		"createSourceMap": 0,
+		"debugStyle": 0,
+		"decimalPrecision": 10,
+		"fileType": 4,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/jQuery.mmenu\/src\/scss\/addons\/jquery.mmenu.autoheight.scss",
+		"outputAbbreviatedPath": "\/vendor\/jQuery.mmenu\/src\/scss\/css\/jquery.mmenu.autoheight.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
@@ -19905,6 +20069,22 @@
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
+	"\/vendor\/jQuery.mmenu\/src\/scss\/addons\/jquery.mmenu.dividers.scss": {
+		"createSourceMap": 0,
+		"debugStyle": 0,
+		"decimalPrecision": 10,
+		"fileType": 4,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/jQuery.mmenu\/src\/scss\/addons\/jquery.mmenu.dividers.scss",
+		"outputAbbreviatedPath": "\/vendor\/jQuery.mmenu\/src\/scss\/css\/jquery.mmenu.dividers.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"shouldRunAutoprefixer": 0,
+		"shouldRunBless": 0,
+		"useLibsass": 0
+		},
 	"\/vendor\/jQuery.mmenu\/src\/scss\/addons\/jquery.mmenu.dragopen.scss": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
@@ -19921,47 +20101,15 @@
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
-	"\/vendor\/jQuery.mmenu\/src\/scss\/addons\/jquery.mmenu.footer.scss": {
+	"\/vendor\/jQuery.mmenu\/src\/scss\/addons\/jquery.mmenu.navbars.scss": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
 		"decimalPrecision": 10,
 		"fileType": 4,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/vendor\/jQuery.mmenu\/src\/scss\/addons\/jquery.mmenu.footer.scss",
-		"outputAbbreviatedPath": "\/vendor\/jQuery.mmenu\/src\/scss\/css\/jquery.mmenu.footer.css",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 0,
-		"shouldRunAutoprefixer": 0,
-		"shouldRunBless": 0,
-		"useLibsass": 0
-		},
-	"\/vendor\/jQuery.mmenu\/src\/scss\/addons\/jquery.mmenu.header.scss": {
-		"createSourceMap": 0,
-		"debugStyle": 0,
-		"decimalPrecision": 10,
-		"fileType": 4,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/vendor\/jQuery.mmenu\/src\/scss\/addons\/jquery.mmenu.header.scss",
-		"outputAbbreviatedPath": "\/vendor\/jQuery.mmenu\/src\/scss\/css\/jquery.mmenu.header.css",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 0,
-		"shouldRunAutoprefixer": 0,
-		"shouldRunBless": 0,
-		"useLibsass": 0
-		},
-	"\/vendor\/jQuery.mmenu\/src\/scss\/addons\/jquery.mmenu.labels.scss": {
-		"createSourceMap": 0,
-		"debugStyle": 0,
-		"decimalPrecision": 10,
-		"fileType": 4,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/vendor\/jQuery.mmenu\/src\/scss\/addons\/jquery.mmenu.labels.scss",
-		"outputAbbreviatedPath": "\/vendor\/jQuery.mmenu\/src\/scss\/css\/jquery.mmenu.labels.css",
+		"inputAbbreviatedPath": "\/vendor\/jQuery.mmenu\/src\/scss\/addons\/jquery.mmenu.navbars.scss",
+		"outputAbbreviatedPath": "\/vendor\/jQuery.mmenu\/src\/scss\/css\/jquery.mmenu.navbars.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
@@ -20001,6 +20149,22 @@
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
+	"\/vendor\/jQuery.mmenu\/src\/scss\/addons\/jquery.mmenu.sectionindexer.scss": {
+		"createSourceMap": 0,
+		"debugStyle": 0,
+		"decimalPrecision": 10,
+		"fileType": 4,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/jQuery.mmenu\/src\/scss\/addons\/jquery.mmenu.sectionindexer.scss",
+		"outputAbbreviatedPath": "\/vendor\/jQuery.mmenu\/src\/scss\/css\/jquery.mmenu.sectionindexer.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"shouldRunAutoprefixer": 0,
+		"shouldRunBless": 0,
+		"useLibsass": 0
+		},
 	"\/vendor\/jQuery.mmenu\/src\/scss\/addons\/jquery.mmenu.toggles.scss": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
@@ -20010,6 +20174,22 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/vendor\/jQuery.mmenu\/src\/scss\/addons\/jquery.mmenu.toggles.scss",
 		"outputAbbreviatedPath": "\/vendor\/jQuery.mmenu\/src\/scss\/css\/jquery.mmenu.toggles.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"shouldRunAutoprefixer": 0,
+		"shouldRunBless": 0,
+		"useLibsass": 0
+		},
+	"\/vendor\/jQuery.mmenu\/src\/scss\/extensions\/jquery.mmenu.borderstyle.scss": {
+		"createSourceMap": 0,
+		"debugStyle": 0,
+		"decimalPrecision": 10,
+		"fileType": 4,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/jQuery.mmenu\/src\/scss\/extensions\/jquery.mmenu.borderstyle.scss",
+		"outputAbbreviatedPath": "\/vendor\/jQuery.mmenu\/src\/scss\/css\/jquery.mmenu.borderstyle.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
@@ -20065,6 +20245,38 @@
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
+	"\/vendor\/jQuery.mmenu\/src\/scss\/extensions\/jquery.mmenu.multiline.scss": {
+		"createSourceMap": 0,
+		"debugStyle": 0,
+		"decimalPrecision": 10,
+		"fileType": 4,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/jQuery.mmenu\/src\/scss\/extensions\/jquery.mmenu.multiline.scss",
+		"outputAbbreviatedPath": "\/vendor\/jQuery.mmenu\/src\/scss\/css\/jquery.mmenu.multiline.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"shouldRunAutoprefixer": 0,
+		"shouldRunBless": 0,
+		"useLibsass": 0
+		},
+	"\/vendor\/jQuery.mmenu\/src\/scss\/extensions\/jquery.mmenu.pageshadow.scss": {
+		"createSourceMap": 0,
+		"debugStyle": 0,
+		"decimalPrecision": 10,
+		"fileType": 4,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/jQuery.mmenu\/src\/scss\/extensions\/jquery.mmenu.pageshadow.scss",
+		"outputAbbreviatedPath": "\/vendor\/jQuery.mmenu\/src\/scss\/css\/jquery.mmenu.pageshadow.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"shouldRunAutoprefixer": 0,
+		"shouldRunBless": 0,
+		"useLibsass": 0
+		},
 	"\/vendor\/jQuery.mmenu\/src\/scss\/extensions\/jquery.mmenu.positioning.scss": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
@@ -20106,70 +20318,6 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/vendor\/jQuery.mmenu\/src\/scss\/extensions\/jquery.mmenu.widescreen.scss",
 		"outputAbbreviatedPath": "\/vendor\/jQuery.mmenu\/src\/scss\/css\/jquery.mmenu.widescreen.css",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 0,
-		"shouldRunAutoprefixer": 0,
-		"shouldRunBless": 0,
-		"useLibsass": 0
-		},
-	"\/vendor\/jQuery.mmenu\/src\/scss\/inc\/_colors.scss": {
-		"createSourceMap": 0,
-		"debugStyle": 0,
-		"decimalPrecision": 10,
-		"fileType": 4,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/vendor\/jQuery.mmenu\/src\/scss\/inc\/_colors.scss",
-		"outputAbbreviatedPath": "\/vendor\/jQuery.mmenu\/src\/scss\/css\/_colors.css",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 0,
-		"shouldRunAutoprefixer": 0,
-		"shouldRunBless": 0,
-		"useLibsass": 0
-		},
-	"\/vendor\/jQuery.mmenu\/src\/scss\/inc\/_mixins.scss": {
-		"createSourceMap": 0,
-		"debugStyle": 0,
-		"decimalPrecision": 10,
-		"fileType": 4,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/vendor\/jQuery.mmenu\/src\/scss\/inc\/_mixins.scss",
-		"outputAbbreviatedPath": "\/vendor\/jQuery.mmenu\/src\/scss\/css\/_mixins.css",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 0,
-		"shouldRunAutoprefixer": 0,
-		"shouldRunBless": 0,
-		"useLibsass": 0
-		},
-	"\/vendor\/jQuery.mmenu\/src\/scss\/inc\/_sizing.scss": {
-		"createSourceMap": 0,
-		"debugStyle": 0,
-		"decimalPrecision": 10,
-		"fileType": 4,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/vendor\/jQuery.mmenu\/src\/scss\/inc\/_sizing.scss",
-		"outputAbbreviatedPath": "\/vendor\/jQuery.mmenu\/src\/scss\/css\/_sizing.css",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 0,
-		"shouldRunAutoprefixer": 0,
-		"shouldRunBless": 0,
-		"useLibsass": 0
-		},
-	"\/vendor\/jQuery.mmenu\/src\/scss\/inc\/_variables.scss": {
-		"createSourceMap": 0,
-		"debugStyle": 0,
-		"decimalPrecision": 10,
-		"fileType": 4,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/vendor\/jQuery.mmenu\/src\/scss\/inc\/_variables.scss",
-		"outputAbbreviatedPath": "\/vendor\/jQuery.mmenu\/src\/scss\/css\/_variables.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
@@ -29234,7 +29382,7 @@
 			},
 		{
 			"followForSyntaxChecking": 1,
-			"linkedFileAbbreviatedPath": "\/vendor\/jQuery.mmenu\/src\/js\/jquery.mmenu.min.all.js",
+			"linkedFileAbbreviatedPath": "\/vendor\/jQuery.mmenu\/dist\/js\/jquery.mmenu.min.all.js",
 			"position": 1,
 			"type": 0
 			}
@@ -29242,8 +29390,8 @@
 	},
 "projectAttributes": {
 	"bowerAbbreviatedPath": "",
-	"displayValue": "www",
-	"displayValueWasSetByUser": 0,
+	"displayValue": "fusionex",
+	"displayValueWasSetByUser": 1,
 	"iconImageName": "brackets_yellow"
 	},
 "projectSettings": {

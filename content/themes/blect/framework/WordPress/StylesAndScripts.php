@@ -85,7 +85,7 @@ class StylesAndScripts
         /**
          * Register Vendor scripts
          */
-        wp_enqueue_script('vendor-js', trailingslashit(FW_THEME_ASSETS_JS_URI) . 'vendor-min.js', array(), null, TRUE);
+        wp_enqueue_script('vendor-js', trailingslashit(FW_THEME_ASSETS_JS_URI) . 'vendor.min.js', array(), null, TRUE);
 
         /**
          * Adding Theme's script .
