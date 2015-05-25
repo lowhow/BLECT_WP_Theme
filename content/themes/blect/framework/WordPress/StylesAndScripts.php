@@ -21,7 +21,7 @@ class StylesAndScripts
         /**
          * MMenu Stylesheet
          */
-        wp_enqueue_style('mmenu', trailingslashit(FW_VENDOR_URI) . 'jQuery.mmenu/src/css/jquery.mmenu.all.css', array(), null);
+        wp_enqueue_style('mmenu', trailingslashit(FW_VENDOR_URI) . 'jQuery.mmenu/dist/css/jquery.mmenu.all.css', array(), null);
 
         /**
          * Link Skin Stylesheet (compiled and minified from LESS)
