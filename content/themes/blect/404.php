@@ -23,7 +23,7 @@ get_header(); ?>
 							<h1 class="entry-title text-size-huge text-muted"><strong>404</strong></h1>
 						</header>
 						<div class="page-content  text-center">
-							<p><?php _e( '抱歉！页面无法访问。也许尝试搜索？', FW_TEXTDOMAIN ); ?></p>
+							<p><?php _e( 'Sorry, your page cannot be found! A search perhaps?', FW_TEXTDOMAIN ); ?></p>
 							<div class="search-box"><?php get_search_form(); ?></div>
 						</div>
 					</article>	
