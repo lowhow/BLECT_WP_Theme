@@ -85,12 +85,12 @@ class StylesAndScripts
         /**
          * Register Vendor scripts
          */
-        wp_enqueue_script('vendor-js', trailingslashit(FW_THEME_ASSETS_JS_URI) . 'vendor.min.js', array(), null, TRUE);
+        wp_enqueue_script('vendor-js', trailingslashit(FW_THEME_ASSETS_JS_URI) . 'vendor.js', array(), null, TRUE);
 
         /**
          * Adding Theme's script .
          */
-        wp_enqueue_script('application-js', trailingslashit(FW_THEME_ASSETS_JS_URI) . 'application.min.js', array('vendor-js'), null, TRUE);
+        wp_enqueue_script('application-js', trailingslashit(FW_THEME_ASSETS_JS_URI) . 'application.js', array('vendor-js'), null, TRUE);
 
 
         return $this;
