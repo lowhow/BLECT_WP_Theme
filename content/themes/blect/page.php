@@ -26,7 +26,6 @@ get_header(); ?>
 						<?php get_template_part( 'partials/content/page' ); ?>
 					<?php endwhile; /** END: The loop */ ?>		
 				</div><?php // END: #content ?>
-				<?php get_template_part( 'partials/module/listing-wpp' ); ?>
 			</div><?php // END: #primary ?>
 			<div class="col-md-4 margin-top-1x"><?php get_sidebar(); ?></div>
 		</div><?php // END: .page-body-inner ?>
