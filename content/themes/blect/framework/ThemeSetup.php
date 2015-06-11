@@ -67,6 +67,7 @@ class ThemeSetup
 		->attach( new Extensions\SliderCustomPostType( $this->loader, 'slider', 'sliders') )
 		->attach( new Extensions\SliderMetaBoxes( $this->loader ) )
 		->attach( new Extensions\Woocommerce( $this->loader ) )
+		->attach( new Extensions\Search( $this->loader ) )
 		->load();
 
 		$this->loader->run();
