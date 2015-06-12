@@ -17,7 +17,7 @@ class StylesAndScripts
          * Link Skin Stylesheet (compiled and minified from LESS)
          */
         wp_enqueue_style('fontawesome', trailingslashit(FW_VENDOR_URI) . 'fontawesome/css/font-awesome.min.css', array(), null);
-        wp_enqueue_style('fontawesome-cdn', '//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css'', array(), null);
+        wp_enqueue_style('fontawesome-cdn', '//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css', array(), null);
 
         /**
          * MMenu Stylesheet
