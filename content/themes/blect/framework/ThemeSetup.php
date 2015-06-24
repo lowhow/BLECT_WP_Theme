@@ -68,6 +68,8 @@ class ThemeSetup
 		->attach( new Extensions\SliderMetaBoxes( $this->loader ) )
 		->attach( new Extensions\Woocommerce( $this->loader ) )
 		->attach( new Extensions\Search( $this->loader ) )
+		->attach( new Extensions\JQueryAjaxify( $this->loader ) )
+		->attach( new Extensions\Projectname\Ajax( $this->loader ) )
 		->load();
 
 		$this->loader->run();
