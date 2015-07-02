@@ -106,7 +106,7 @@ class Helper
 	  		if ( get_post_type() != 'post' ) {
 	  			$post_type = get_post_type_object(get_post_type());
 	  			$slug = $post_type->rewrite;
-	  			echo '<a href="' . $homeLink . '/' . $slug['slug'] . '/">' . $post_type->labels->singular_name . '</a>';
+	  			echo '<a href="' . $homeLink . '/' . $slug['slug'] . '/">' . $post_type->labels->name . '</a>';
 	  			if ($showCurrent == 1) echo ' ' . $delimiter . ' ' . $before . get_the_title() . $after;
 	  		} else {
 	  			$cat = get_the_category(); $cat = $cat[0];
@@ -118,7 +118,7 @@ class Helper
 
 	  	} elseif ( !is_single() && !is_page() && get_post_type() != 'post' && !is_404() ) {
 	  		$post_type = get_post_type_object(get_post_type());
-	  		echo $before . $post_type->labels->singular_name . $after;
+	  		echo $before . $post_type->labels->name . $after;
 
 	  	} elseif ( is_attachment() ) {
 	  		$parent = get_post($post->post_parent);
@@ -210,6 +210,9 @@ class Helper
 	public function t_entry_publisher() 
 	{
 		// Translators: used between list items, there is a space after the comma.
+		if ( !taxonomy_exists('publisher') )
+			return false;
+		
 		global $post;
 		$publisher_list = get_the_term_list( $post->ID, 'publisher', '<span class="tags-links"><i class="fa fa-book fa-fw"></i> ', ', ', '</span>' );
 		if ( $publisher_list ) 

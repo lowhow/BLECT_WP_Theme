@@ -62,12 +62,14 @@ class ThemeSetup
 		$this->shortcode->add();
 
 		$this->extensionLoader
-		->attach( new Extensions\PrettyPhoto )
+		//->attach( new Extensions\PrettyPhoto )
 		->attach( new Extensions\Pagination( $this->loader ) )
 		->attach( new Extensions\SliderCustomPostType( $this->loader, 'slider', 'sliders') )
 		->attach( new Extensions\SliderMetaBoxes( $this->loader ) )
 		->attach( new Extensions\Woocommerce( $this->loader ) )
 		->attach( new Extensions\Search( $this->loader ) )
+		->attach( new Extensions\Projectname\Quicktags( $this->loader ) )
+		->attach( new Extensions\Projectname\Shortcode( $this->loader ) )
 		->attach( new Extensions\JQueryAjaxify( $this->loader ) )
 		->attach( new Extensions\Projectname\Ajax( $this->loader ) )
 		->load();
