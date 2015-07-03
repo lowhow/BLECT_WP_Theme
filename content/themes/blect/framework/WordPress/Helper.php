@@ -117,8 +117,21 @@ class Helper
 	  		}
 
 	  	} elseif ( !is_single() && !is_page() && get_post_type() != 'post' && !is_404() ) {
-	  		$post_type = get_post_type_object(get_post_type());
-	  		echo $before . $post_type->labels->name . $after;
+	  		/** When there's a post type */
+	  		if ( get_post_type() ){
+		  		$post_type = get_post_type_object(get_post_type());
+		  		echo $before . $post_type->labels->name . $after;
+		  	}
+		  	else
+		  	{
+		  		/** if post_type exist in global query */
+		  		global $wp_query;
+		  		if ( isset( $wp_query->query_vars['post_type'] ) )
+		  		{
+		  			$post_type = get_post_type_object( $wp_query->query_vars['post_type'] );
+		  			echo $before . $post_type->labels->name . $after;
+		  		}
+		  	}
 
 	  	} elseif ( is_attachment() ) {
 	  		$parent = get_post($post->post_parent);

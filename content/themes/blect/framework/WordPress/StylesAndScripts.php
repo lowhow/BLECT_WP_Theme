@@ -66,7 +66,7 @@ class StylesAndScripts
         /**
          * Bootstrap Script
          */
-//	  	wp_enqueue_script( 'bs-js', trailingslashit( FW_VENDOR_URI ) . 'bootstrap/dist/js/bootstrap.min.js', array( 'jquery' ), null, TRUE );
+	  	wp_enqueue_script( 'bs-js', trailingslashit( FW_VENDOR_URI ) . 'bootstrap/dist/js/bootstrap.min.js', array( 'jquery' ), null, TRUE );
 
         /**
          * Kwicks Script
@@ -81,7 +81,7 @@ class StylesAndScripts
         /**
          * MMenu Script
          */
-//		wp_enqueue_script( 'mmenu-js', trailingslashit( FW_VENDOR_URI ) . 'jQuery.mmenu/src/js/jquery.mmenu.min.all.js', array( 'jquery' ), null, TRUE );
+		wp_enqueue_script( 'mmenu-js', trailingslashit( FW_VENDOR_URI ) . 'jQuery.mmenu/dist/js/jquery.mmenu.min.all.js', array( 'jquery' ), null, TRUE );
 
         /**
          * Register Vendor scripts
@@ -132,6 +132,11 @@ class StylesAndScripts
          * Main Script
          */
         wp_enqueue_script('admin-js', trailingslashit(FW_THEME_ASSETS_JS_URI) . 'admin.js', array(), null);
+
+        /**
+         * Moment.js Script
+         */
+        wp_enqueue_script( 'bs-js', trailingslashit( FW_VENDOR_URI ) . 'moment/min/moment.min.js', array(), null );
 
     }
 
