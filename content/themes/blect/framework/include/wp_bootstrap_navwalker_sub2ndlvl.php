@@ -9,8 +9,9 @@
  * License URI: http://www.gnu.org/licenses/gpl-2.0.txt
  */
 
-class wp_bootstrap_navwalker extends Walker_Nav_Menu {
-
+class wp_bootstrap_navwalker_sub2ndlvl extends Walker_Nav_Menu {
+	private $ancestor_found;
+	private $skip;
 	/**
 	 * @see Walker::start_lvl()
 	 * @since 3.0.0
@@ -19,8 +20,21 @@ class wp_bootstrap_navwalker extends Walker_Nav_Menu {
 	 * @param int $depth Depth of page. Used for padding.
 	 */
 	public function start_lvl( &$output, $depth = 0, $args = array() ) {
+		if ( $depth == 0 || $this->skip )
+		{
+			return false;
+		}
+
 		$indent = str_repeat( "\t", $depth );
 		$output .= "\n$indent<ul role=\"menu\" class=\" dropdown-menu\">\n";
+	}
+
+	public function end_lvl( &$output, $depth = 0, $args = array() ) {
+		if ( $depth == 0 || $this->skip )
+		{
+			return false;
+		}
+		$output .= "</ul>";
 	}
 
 	/**
@@ -35,6 +49,28 @@ class wp_bootstrap_navwalker extends Walker_Nav_Menu {
 	 */
 	public function start_el( &$output, $item, $depth = 0, $args = array(), $id = 0 ) {
 		$indent = ( $depth ) ? str_repeat( "\t", $depth ) : '';
+
+		if ( $depth == 0 )
+		{ 
+			if ( in_array( 'current-menu-ancestor', $item->classes ) || in_array( 'current-menu-item', $item->classes ) ) 
+			{
+				$this->ancestor_found = true;
+				$this->skip = false;
+			}
+			if ( ! in_array( 'current-menu-ancestor', $item->classes ) && ! in_array( 'current-menu-item', $item->classes ) )
+			{
+				$this->skip = true;
+			}
+
+			return false;
+		}
+		else // ($depth > 0)
+		{
+			if ( $this->skip )
+			{
+				return false;
+			}
+		}
 
 		/**
 		 * Dividers, Headers or Disabled
@@ -81,7 +117,7 @@ class wp_bootstrap_navwalker extends Walker_Nav_Menu {
 			$atts['rel']    = ! empty( $item->xfn )		? $item->xfn	: '';
 
 			// If item has_children add atts to a.
-			if ( $args->has_children ) {
+			if ( $args->has_children && ( $depth === 0 || $depth === 1 ) ) {
 				$atts['href']   		= '#';
 				$atts['data-toggle']	= 'dropdown';
 				$atts['class']			= 'dropdown-toggle';
