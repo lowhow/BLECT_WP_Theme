@@ -66,6 +66,24 @@ $(function() {
 		});
 	}
 
+	//////////////////////////////////
+	// Bootstrap 3rd level dropdown //
+	//////////////////////////////////
+	$(".dropdown-menu > li > a").on("click",function(e){
+		var current		=	$(this).next();
+		var $parent 		=	$(this).parent()
+		var $grandparent =	$(this).parent().parent();
+
+		$parent.toggleClass('open');
+
+		$grandparent.find('.open').not($parent).toggleClass('open')
+		e.stopPropagation();
+	});
+	$("li.dropdown > a").not('li.dropdown li.dropdown > a').on("click",function(){
+		var root=$(this).find('.dropdown');
+		root.find('.sub-menu:visible').hide();
+	});
+
 
 	//////////////////
 	// EventListen //
