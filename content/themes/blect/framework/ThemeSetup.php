@@ -74,7 +74,6 @@ class ThemeSetup
 		->attach( new Extensions\Projectname\Shortcode( $this->loader ) )
 		->attach( new Extensions\Projectname\Router( $this->loader ) )
 		->attach( new Extensions\Projectname\Ajax( $this->loader ) )
-		->attach( new Extensions\Projectname\Member( $this->loader ) )
 		->load();
 
 		$this->loader->run();
