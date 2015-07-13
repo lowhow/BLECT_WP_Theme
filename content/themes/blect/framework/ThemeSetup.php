@@ -64,6 +64,7 @@ class ThemeSetup
 		$this->extensionLoader
 		//->attach( new Extensions\PrettyPhoto )
 		->attach( new Extensions\Pagination( $this->loader ) )
+		->attach( new Extensions\Page( $this->loader ) )
 		->attach( new Extensions\SliderCustomPostType( $this->loader, 'slider', 'sliders') )
 		->attach( new Extensions\SliderMetaBoxes( $this->loader ) )
 		->attach( new Extensions\EventCustomPostType( $this->loader, 'event', 'events', 'events') )
