@@ -66,7 +66,6 @@ class ThemeSetup
 		->attach( new Extensions\Pagination( $this->loader ) )
 		->attach( new Extensions\Page( $this->loader ) )
 		->attach( new Extensions\SliderCustomPostType( $this->loader, 'slider', 'sliders') )
-		->attach( new Extensions\SliderMetaBoxes( $this->loader ) )
 		->attach( new Extensions\EventCustomPostType( $this->loader, 'event', 'events', 'events') )
 		->attach( new Extensions\Woocommerce( $this->loader ) )
 		->attach( new Extensions\Search( $this->loader ) )
