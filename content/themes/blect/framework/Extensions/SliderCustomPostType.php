@@ -22,6 +22,7 @@ class SliderCustomPostType extends CustomPostType  implements Observer
 	{	
 		$this->loader
 		->add_action( 'init', $this, 'custom_post_type_init' )
+		->add_action( 'init', $this, 'register_acf_field_group' )
 		->add_action( 'wp_footer', $this, 'action_javascript', 100 )
 		->add_filter( 'manage_slider_posts_columns', $this, 'add_new_column_headers' )
 		->add_action( 'manage_slider_posts_custom_column', $this, 'add_new_column_columns', 10, 2 )
@@ -31,8 +32,6 @@ class SliderCustomPostType extends CustomPostType  implements Observer
 		remove_filter( 'the_content', 'wpautop' );
         add_filter( 'the_content', 'wpautop', 99 );
         add_filter( 'the_content', 'shortcode_unautop', 100 );
-
-        $this->register_acf_field_group();
 
 		return $this;
 	}
@@ -128,9 +127,12 @@ class SliderCustomPostType extends CustomPostType  implements Observer
 		?>
 		<script>
 		jQuery( window ).load( function( $ ) {
-			jQuery('.flexslider').flexslider({
-    			animation: "slide"
-  			});
+			var $flexslider = jQuery('.flexslider');
+			if( $flexslider.length > 0 ){
+				jQuery('.flexslider').flexslider({
+	    			animation: "slide"
+	  			});
+			}
 		});
 		</script>
 		<?php
@@ -203,7 +205,7 @@ class SliderCustomPostType extends CustomPostType  implements Observer
 	 * [register_acf_field_group description]
 	 * @return [type] [description]
 	 */
-	private function register_acf_field_group()
+	public function register_acf_field_group()
 	{
 		if( function_exists('acf_add_local_field_group') ):
 

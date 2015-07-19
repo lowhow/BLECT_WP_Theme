@@ -46,6 +46,7 @@ class EventCustomPostType extends CustomPostType  implements Observer
 		$this->loader
 		->add_action('init', $this, 'event_rewrite_tags')
 		->add_action('init', $this, 'custom_post_type_init')
+		->add_action('init', $this, 'register_acf_field_group')
 		->add_action('init', $this, 'pretty_url')
 		->add_filter('post_type_link', $this, 'event_permalink', 10, 4 )
 		->add_action('pre_get_posts', $this, 'event_queries')
@@ -572,6 +573,9 @@ class EventCustomPostType extends CustomPostType  implements Observer
 	public function alter_table_query_by_filters( $query ) {
 		if( is_admin() AND $query->query['post_type'] == 'event' ) 
 		{
+			if ( !isset( $_GET['events_start_date'] ) )
+				return false;
+
 			$qv = &$query->query_vars;
 			$qv['meta_query'] = array();
 
@@ -640,5 +644,122 @@ class EventCustomPostType extends CustomPostType  implements Observer
 
 		}
 	}
-	
+
+	/**
+	 * [acf_register_field_group description]
+	 * @return [type] [description]
+	 */
+	public function register_acf_field_group()
+	{
+		if( function_exists('acf_add_local_field_group') ):
+
+		acf_add_local_field_group(array (
+			'key' => 'group_559518acce78a',
+			'title' => 'Event',
+			'fields' => array (
+				array (
+					'key' => 'field_55922c1c041de',
+					'label' => 'Event\'s Start date',
+					'name' => 'events_start_date',
+					'type' => 'date_time_picker',
+					'instructions' => '',
+					'required' => 1,
+					'conditional_logic' => 0,
+					'wrapper' => array (
+						'width' => '',
+						'class' => '',
+						'id' => '',
+					),
+					'show_date' => 'true',
+					'date_format' => 'yy-mm-dd',
+					'time_format' => 'HH:mm:ss',
+					'show_week_number' => 'false',
+					'picker' => 'slider',
+					'save_as_timestamp' => 'true',
+					'get_as_timestamp' => 'false',
+				),
+				array (
+					'key' => 'field_55922e2d8bd84',
+					'label' => 'Event\'s End date',
+					'name' => 'events_end_date',
+					'type' => 'date_time_picker',
+					'instructions' => '',
+					'required' => 1,
+					'conditional_logic' => 0,
+					'wrapper' => array (
+						'width' => '',
+						'class' => '',
+						'id' => '',
+					),
+					'show_date' => 'true',
+					'date_format' => 'yy-mm-dd',
+					'time_format' => 'HH:mm:ss',
+					'show_week_number' => 'false',
+					'picker' => 'slider',
+					'save_as_timestamp' => 'true',
+					'get_as_timestamp' => 'false',
+				),
+				array (
+					'key' => 'field_55937c151559e',
+					'label' => 'Event\'s Venue',
+					'name' => 'events_venue',
+					'type' => 'text',
+					'instructions' => '',
+					'required' => 0,
+					'conditional_logic' => 0,
+					'wrapper' => array (
+						'width' => '',
+						'class' => '',
+						'id' => '',
+					),
+					'default_value' => '',
+					'placeholder' => 'Name of place',
+					'prepend' => '',
+					'append' => '',
+					'formatting' => 'none',
+					'maxlength' => '',
+					'readonly' => 0,
+					'disabled' => 0,
+				),
+				array (
+					'key' => 'field_55937e9d8cf03',
+					'label' => 'Event\'s Description',
+					'name' => 'events_description',
+					'type' => 'textarea',
+					'instructions' => '',
+					'required' => 0,
+					'conditional_logic' => 0,
+					'wrapper' => array (
+						'width' => '',
+						'class' => '',
+						'id' => '',
+					),
+					'default_value' => '',
+					'placeholder' => '',
+					'maxlength' => '',
+					'rows' => 2,
+					'new_lines' => '',
+					'readonly' => 0,
+					'disabled' => 0,
+				),
+			),
+			'location' => array (
+				array (
+					array (
+						'param' => 'post_type',
+						'operator' => '==',
+						'value' => 'event',
+					),
+				),
+			),
+			'menu_order' => 0,
+			'position' => 'side',
+			'style' => 'default',
+			'label_placement' => 'top',
+			'instruction_placement' => 'label',
+			'hide_on_screen' => '',
+		));
+
+		endif;
+	}
 }
