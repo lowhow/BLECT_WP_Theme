@@ -12,6 +12,7 @@
     "animate-css": "~3.2.0",
     "OwlCarousel": "~1.3.2",
     "fullpage.js": "~2.6.5",
+    "WOW": "~1.1.2",
     "FlexSlider": "https://github.com/woothemes/FlexSlider.git",
     "moment": "~2.10.3"
   },
