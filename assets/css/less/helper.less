@@ -1,0 +1,420 @@
+/*
+db   db d88888b db      d8888b. d88888b d8888b. .d8888. 
+88   88 88'     88      88  `8D 88'     88  `8D 88'  YP 
+88ooo88 88ooooo 88      88oodD' 88ooooo 88oobY' `8bo.   
+88~~~88 88~~~~~ 88      88~~~   88~~~~~ 88`8b     `Y8b. 
+88   88 88.     88booo. 88      88.     88 `88. db   8D 
+YP   YP Y88888P Y88888P 88      Y88888P 88   YD `8888Y' 
+ */
+////////////
+// mixins //
+////////////
+.transform(@string){
+	transform: 			@string;
+	-webkit-transform: 	@string;
+	-moz-transform: 	@string;
+	-ms-transform: 		@string;
+	-o-transform: 		@string;
+}
+.animation-delay(@string){
+	animation-delay: 			@string; 
+	-webkit-animation-delay: 	@string;
+	-moz-animation-delay: 		@string;
+	-ms-animation-delay: 		@string;
+	-o-animation-delay: 		@string;
+}
+
+////////////////
+// skin icons //
+////////////////
+.skin-icon-plus{
+	position: relative;
+	display: inline-block; 
+	width: 24px;
+	height: 35px;
+	border-left: 2px solid #fff;
+	margin: -10px 0 -10px 10px;
+
+	&:before{
+		position: absolute;
+		content: '';
+		border-top: 2px solid #fff;
+		width: 14px;
+		height: 1px;
+		display: inline-block; 
+		top:17px;
+		right:0;
+		border-color: #fff;
+		.transition(~'border-color .25s');
+	}
+	&:after{
+		position: absolute;
+		content: '';
+		border-left: 2px solid #fff;
+		width: 1px;
+		height: 14px;
+		display: inline-block; 
+		top:11px;
+		right:6px;
+		border-color: #fff;
+		.transition(~'border-color .25s');
+	}
+
+}
+
+.delimiter{
+    display: inline-block;
+    width: 3px;
+    content: '';
+}
+///////////////////////////
+// Contextual Background //
+///////////////////////////
+.bg-gray-lighter{
+	background-color: #f7f7f7;
+}
+.bg-gray-darker{
+	background-color: @skin-gray-darker;
+}
+////////////////
+// typography //
+////////////////
+.hentry{
+	h4, h5, h6{
+		color:#000;
+	}
+}
+.text-size-huge{
+	font-size: 404px * 0.404;
+	white-space: nowrap;
+}
+.text-yellow{
+	color:@skin-yellow;
+}
+.text-red{
+	color:@skin-red;
+}
+.text-green{
+	color: @skin-green;
+}
+.text-orange{
+	color:@skin-orange;
+}
+.text-white{
+	color:#fff;
+}
+a.text-white{
+	&:hover{
+		color: rgba(255,255,255,.5);
+	}
+}
+.text-strip{
+	background-color: rgba(0,0,0,.4);
+	line-height: 1.4;
+	display: inline-block;
+	padding:  4px 10px;
+}
+.semitransparent{
+	opacity: .5;
+}
+.centerlinkwrap{
+	position: absolute;
+	z-index: 2;
+	top:50%;
+	width: 100%;
+	padding: 0 @line-height-computed;
+}
+
+img{
+	.img-responsive;
+}
+img.img-responsive-full{
+	width:100%;
+}
+
+::selection {
+  background: #505b66; /* WebKit/Blink Browsers */
+  color: #fff;
+}
+::-moz-selection {
+  background: #505b66; /* Gecko Browsers */
+  color: #fff;
+}
+
+a,
+a:hover{
+	.transition( ~'all .25s' );
+}
+
+///////////////////
+// Margin helper //
+///////////////////
+.margin-top-0{
+	margin-top: 0!important;
+}
+
+.margin-top-half{
+	margin-top: @line-height-computed / 2!important;
+}
+
+.margin-top-1x{
+	margin-top: @line-height-computed!important;
+}
+
+.margin-bottom-0{
+	margin-bottom: 0!important;
+}
+
+.margin-bottom-half{
+	margin-bottom: @line-height-computed / 2!important;
+}
+
+.margin-bottom-1x{
+	margin-bottom: @line-height-computed!important;
+}
+
+.margin-bottom-2x{
+	margin-bottom: @line-height-computed * 2!important;
+}
+
+////////////////////
+// Padding helper //
+////////////////////
+.padding-top-0{
+	padding-top: 0!important;
+}
+.padding-top-quarter{
+	padding-top: @line-height-computed / 4!important;
+}
+.padding-top-half{
+	padding-top: @line-height-computed / 2!important;
+}
+.padding-top-1x{
+	padding-top: @line-height-computed!important;
+}
+.padding-bottom-quarter{
+	padding-bottom: @line-height-computed / 4!important;
+}
+.padding-bottom-half{
+	padding-bottom: @line-height-computed / 2!important;
+}
+.padding-bottom-1x{
+	padding-bottom: @line-height-computed!important;
+}
+.padding-right-1x{
+	padding-right: @line-height-computed!important;
+}
+.padding-right-2x{
+	padding-right: @line-height-computed * 2!important;
+}
+
+/**
+ * Dark theme
+ */
+.dark{
+	background: @skin-gray-dark;
+	color: darken( @skin-gray-lighter, 20% );
+
+	hr{
+		border-color: #000;
+		.box-shadow(~'0 1px 0 rgba(255,255,255,.1)');
+	}
+
+	a{
+		color: #fff;
+		text-decoration: none;
+
+		&:hover,
+		&:focus,
+		&:active{
+			color: @skin-gray-light;
+		}
+	}
+}
+
+.transparent-bg-light{
+	background-color: rgba(255,255,255,.85);
+}
+
+//////////////////
+// Custom Panel //
+//////////////////
+.clip{
+    .alert;
+    border-radius: 0;
+    position: relative;
+    &:before{
+    	content: '';
+    	display: block;
+    	color:#fff;
+    	font-size: 24px;
+    	margin-top: -10px;
+    	font-weight: bold;
+    }
+    &:after{
+    	font-family: 'fontawesome';
+    	display: block;
+    	content: '';
+    	opacity: .2;
+    	color:#fff;
+    	position: absolute;
+    	bottom: 0px;
+    	right:0px;
+    	font-size: 5em;
+    	line-height: 1;
+    	padding: 5px;
+    	width:90px;
+    	height: 75px;
+    	text-align: center;
+    	vertical-align: text-bottom;
+    }
+}
+.clipintro{
+    .clip;
+    background-color: @skin-green;
+    color: darken(@skin-green, 25%);
+    &:before{
+    	content: '\7B80\4ECB'; // 简介
+    }
+    &:after{
+    	content: '\f040'; // fa-pencil
+    }
+}
+.cliptips{
+    .clip;
+    background-color: @skin-orange;
+    color: darken(@skin-orange, 30%);
+     &:before{
+    	content: '\6E29\99A8\63D0\9192'; // 温馨提醒
+    }
+    &:after{
+    	content: '\f004'; // fa-heart
+    }
+}
+.clipalert{
+    .clip;
+    background-color: @skin-red;
+    color: @skin-yellow;
+     &:before{
+    	content: '\6CE8\610F'; // 注意
+    }
+    &:after{
+    	content: '\f071'; // fa-exclamation-triangle
+    }
+}
+.cliprecommend{
+    .clip;
+    background-color: @brand-primary;
+    color: lighten(@brand-primary, 50%);
+     &:before{
+    	content: '\63A8\8350'; // 推荐
+    }
+    &:after{
+    	content: '\f087'; // fa-thumbs-o-up
+    }
+}
+.clipvoiceup{
+	.clip;
+    background-color: @skin-green-pastel;
+    color: darken( @skin-green, 10% );
+     &:before{
+    	content: '\6709\8BDD\8BF4'; // 有话说
+    	color: darken( @skin-yellow, 25% );
+    }
+    &:after{
+    	content: '\f130'; // fa-microphone
+    	opacity: .4;
+    }
+}
+.clipdidyouknow{
+	.clip;
+    background-color: @skin-khaki-light;
+    color: darken( @skin-yellow, 30% );
+     &:before{
+    	content: '\4F60\77E5\9053\5417\FF1F'; // 你知道吗？
+    	color: darken( @skin-khaki, 30% );
+    }
+    &:after{
+    	content: '\f0eb'; // fa-lightbulb-o
+    	opacity: .5;
+    }
+}
+.cliptravelguide{
+	.clip;
+    background-color: @skin-gray-pastel-dark;
+    color: lighten( @skin-yellow, 20%);
+     &:before{
+    	content: '\65C5\6E38\6307\5357'; // 旅游指南
+    }
+    &:after{
+    	content: '\f14e'; // fa-compass
+    	opacity: .3;
+    }
+}
+.clipqna{
+	.clip;
+    background-color: @skin-magenta;
+    color: lighten( @skin-magenta, 35% );
+     &:before{
+    	content: '\95EE\4E0E\7B54'; // 问与答
+    }
+    &:after{
+    	content: '\f086'; // fa-comments
+    }
+    .clipqna_q{
+    	color: @skin-yellow;
+    	font-size: 1.18em;
+    }
+    .clipqna_a{
+    	color: #fff;
+    	font-size: 1.18em;
+    }
+}
+.tnc{
+	.clip;
+	background-color: lighten( @skin-gray-pastel, 5% );
+	padding: 64px @line-height-computed @line-height-computed;
+	&:before{
+		content: '';
+		position: absolute;
+		top:9px;
+		right:-1px;
+		display: inline-block;
+		width: 0;
+		height:0;
+		vertical-align: middle;
+		border-left: 25px solid @skin-gray-pastel-dark;
+		border-right: 25px solid #fff;
+		border-top: 25px solid #fff;
+		border-bottom: 25px solid @skin-gray-pastel-dark;
+	}
+	&:after{
+    	content: '\f08d'; // fa-thumb-tack
+    	opacity: 1;
+    	color:lighten( @skin-red, 10% );
+    	top: 10px;
+    	left:10px;
+    	width:45px;
+    	height:45px;
+    	border-radius: 40px;
+    	line-height: 35px;
+    	background-color: #fff;
+    	font-size: 2em;
+    	.transform(~'rotate(-45deg)');
+    }
+}
+
+///////////////////
+// MEDIA QUERIES //
+///////////////////
+/* Small devices (tablets, 768px and up) */
+@media (min-width: @screen-sm-min) { 
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: @screen-md-min) { 
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: @screen-lg-min) {
+}
