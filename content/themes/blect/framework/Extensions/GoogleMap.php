@@ -30,7 +30,7 @@ class GoogleMap implements Observer
 	 * lat="", lng="", title="", $content 
 	 * optional zoom="15"
 	 * example:
-	 * [fw_gmap lat="2.3423" lng="9.23489" title="Sunway Pyramid"]content here...[/fw_gmap]
+	 * [fw_gmap lat="3.095009" lng="101.6746841" title="The Scott Garden" zoom="17" height="300px"]info window content here...[/fw_gmap]
 	 * @return [type] [description]
 	 */
 	public function gmap_shortcode( $atts, $content )
@@ -38,13 +38,20 @@ class GoogleMap implements Observer
 		if ( !isset( $atts['lat'] ) || !isset( $atts['lng'] ) || !isset( $atts['title'] ) )
 			return; 
 
-		if ( $atts['zoom'] )
+		$mapzoom = 15;
+		if ( isset( $atts['zoom'] ) && $atts['zoom'] !== '' )
+			$mapzoom = 15;
+
+		$mapheight = '300px';
+		if ( isset( $atts['height'] ) && $atts['height'] !== '' )
+			$mapheight = $atts['height'];
+
+		$mapid = 'gm' . wp_generate_password( 8, false );
 
 		ob_start(); 
-		$mapid = 'gm' . wp_generate_password( 8, false );
 		?> 
 		<style>
-		<?php echo '#' . $mapid ?> { width: 100%; height:300px; }
+		<?php echo '#' . $mapid ?> { width: 100%; height:<?php echo $mapheight ?>; }
 		</style>
 		<div class="google-maps">
 			<div id="<?php echo $mapid; ?>" class="gmap"></div>
@@ -66,7 +73,7 @@ class GoogleMap implements Observer
 
 		  	var mapOptions = {
 		  		scrollwheel: false,
-			    zoom: 15,
+			    zoom: <?php echo $mapzoom ?>,
 			    center: center
 		  	};
 
