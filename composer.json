@@ -42,7 +42,7 @@
 		    "wpackagist-plugin/responsive-lightbox": ">=1.4",
 		    "wpackagist-plugin/advanced-cron-manager": ">=1.4",
 		    "wpackagist-plugin/members": ">=0.2.5",
-		    "wpackagist-plugin/woocommerce": ">=2.4.4"
+		    "wpackagist-plugin/woocommerce": ">=2.4.6"
     },
     "extra": 
     {
