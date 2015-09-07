@@ -17,7 +17,7 @@ class StylesAndScripts
          * Link Skin Stylesheet (compiled and minified from LESS)
          */
         wp_enqueue_style('fontawesome', trailingslashit(FW_VENDOR_URI) . 'fontawesome/css/font-awesome.min.css', array(), null);
-        wp_enqueue_style('fontawesome-cdn', '//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css', array(), null);
+        wp_enqueue_style('fontawesome-cdn', '//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css', array(), null);
 
         /**
          * MMenu Stylesheet
@@ -82,6 +82,11 @@ class StylesAndScripts
          * MMenu Script
          */
 		wp_enqueue_script( 'mmenu-js', trailingslashit( FW_VENDOR_URI ) . 'jQuery.mmenu/dist/js/jquery.mmenu.min.all.js', array( 'jquery' ), null, TRUE );
+
+        /**
+         * jQuery Easing
+         */
+        wp_enqueue_script('jquery-easing', 'https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js', array('jquery'), null, TRUE);
 
         /**
          * Register Vendor scripts
