@@ -88,8 +88,11 @@ define( 'WP_POST_REVISIONS', '1' );
 
 /* Updates */
 //define( 'DISALLOW_FILE_MODS', true ); // turn on in live site
-//define( 'DISALLOW_FILE_EDIT', true ); // turn on in live site
+define( 'DISALLOW_FILE_EDIT', true ); // turn on in live site
 define( 'WP_AUTO_UPDATE_CORE', true );
+// define( 'FTP_USER', 'username' );
+// define( 'FTP_PASS', 'password' );
+// define( 'FTP_HOST', 'localhost' );
 
 
 /**
