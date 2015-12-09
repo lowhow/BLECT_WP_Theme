@@ -12,8 +12,8 @@ class ThemeSetup
 	private $textDomain;
 	private $oEmbed;
 
-	public function __construct() 
-	{	
+	public function __construct()
+	{
 		$this->loader = new WordPress\Loader;
 		$this->helper = new WordPress\Helper;
 		$this->stylesAndScripts = new WordPress\StylesAndScripts;
@@ -25,7 +25,7 @@ class ThemeSetup
 		$this->textDomain = new WordPress\TextDomain;
 		$this->oEmbed = new WordPress\OEmbed;
 
-		global $helper; 
+		global $helper;
 		$helper = $this->helper;
 	}
 
@@ -33,8 +33,8 @@ class ThemeSetup
 	 * Boot up and RUN!
 	 * @return object
 	 */
-	public function run() 
-	{	
+	public function run()
+	{
 		$this->loader
 		->set_upload_path()
 		->load_dependancies( array( 'wp_bootstrap_navwalker.php', 'simple_html_dom.php') )
@@ -51,13 +51,14 @@ class ThemeSetup
 		->add_filter( 'widget_text', NULL, 'shortcode_unautop' )
 		->add_filter( 'widget_text', NULL, 'do_shortcode' )
 		->add_filter( 'embed_oembed_html', $this->oEmbed, 'add_oembed_responsive_wrapper', 10, 4 )
-		->remove_action( 'wp_head', 'wp_generator' ) 
+		->remove_action( 'wp_head', 'wp_generator' )
 		->remove_action( 'wp_head', 'wlwmanifest_link' )
 		//->remove_action('wp_head', 'adjacent_posts_rel_link_wp_head', 10, 0)
 		//->remove_action('wp_head', 'feed_links', 2)
 		//->remove_action('wp_head', 'feed_links_extra', 3)
 		//->remove_action( 'wp_head', 'wp_shortlink_wp_head', 10, 0 )
-		->remove_action( 'wp_head', 'rsd_link' );	
+		->remove_action( 'wp_head', 'rsd_link' )
+		->add_action( 'init', $this->helper, 'disable_wp_emojicons' );
 
 		$this->shortcode->add();
 

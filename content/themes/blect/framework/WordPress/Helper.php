@@ -1,6 +1,6 @@
 <?php namespace Framework\WordPress;
 
-class Helper 
+class Helper
 {
 	/**
 	 * Custom filter to add wp title.
@@ -8,7 +8,7 @@ class Helper
 	 * @param [type] $sep
 	 * @return $title
 	 */
-	public function add_wp_title( $title, $sep ) 
+	public function add_wp_title( $title, $sep )
 	{
 		global $paged, $page;
 
@@ -39,7 +39,7 @@ class Helper
 	 * Add favicon links
 	 */
 	public function add_favicon() {
-		echo '<link rel="apple-touch-icon-precomposed" sizes="144x144" href="'. FW_THEME_ASSETS_FAVICON_URI .'apple-touch-icon-144-precomposed.png" />' . 
+		echo '<link rel="apple-touch-icon-precomposed" sizes="144x144" href="'. FW_THEME_ASSETS_FAVICON_URI .'apple-touch-icon-144-precomposed.png" />' .
 		'<link rel="apple-touch-icon-precomposed" sizes="114x114" href="'. FW_THEME_ASSETS_FAVICON_URI .'apple-touch-icon-114-precomposed.png" /> ' .
 	  '<link rel="apple-touch-icon-precomposed" sizes="72x72" href="'. FW_THEME_ASSETS_FAVICON_URI .'apple-touch-icon-72-precomposed.png" />' .
 	  '<link rel="apple-touch-icon-precomposed" href="'. FW_THEME_ASSETS_FAVICON_URI .'apple-touch-icon-57-precomposed.png" />' .
@@ -51,7 +51,7 @@ class Helper
 
 
 	/**
-	 * Create Breadcrumbs 
+	 * Create Breadcrumbs
 	 *
 	 * @since Vun Hougkh 1.0
 	 *
@@ -61,19 +61,19 @@ class Helper
 	 *
 	 * @link http://www.qualitytuts.com/wordpress-custom-breadcrumbs-without-plugin/
 	 */
-	public function fw_breadcrumbs() 
+	public function fw_breadcrumbs()
 	{
-  
+
 	  $showOnHome = 0; // 1 - show breadcrumbs on the homepage, 0 - don't show
 	  $delimiter = ' <span class="delimiter text-muted">/</span> '; // delimiter between crumbs
 	  $home = __( 'Home', FW_TEXTDOMAIN ); // text for the 'Home' link
 	  $showCurrent = 1; // 1 - show current post/page title in breadcrumbs, 0 - don't show
 	  $before = '<span class="current">'; // tag before the current crumb
 	  $after = '</span>'; // tag after the current crumb
-	  
+
 	  global $post;
 	  $homeLink = get_bloginfo('url');
-	  
+
 	  if (is_home() || is_front_page()) {
 
 	  	if ($showOnHome == 1) echo '<div id="crumbs"><a href="' . $homeLink . '">' . $home . '</a></div>';
@@ -181,7 +181,7 @@ class Helper
 	 * @param  boolean $echo [description]
 	 * @return [type]        [description]
 	 */
-	public function t_entry_date( $echo = TRUE ) 
+	public function t_entry_date( $echo = TRUE )
 	{
 		if ( has_post_format( array( 'chat', 'status' ) ) )
 			$format_prefix = _x( '%1$s on %2$s', '1: post format name. 2: date', FW_TEXTDOMAIN );
@@ -206,12 +206,12 @@ class Helper
 	 * [t_entry_tag description]
 	 * @return [type] [description]
 	 */
-	public function t_entry_tag() 
+	public function t_entry_tag()
 	{
 		// Translators: used between list items, there is a space after the comma.
 		$tag_list = get_the_tag_list( '<span class="tags-links"><i class="fa fa-tags fa-fw"></i> ', ', ', '</span>' );
-		if ( $tag_list ) 
-		{			
+		if ( $tag_list )
+		{
 			echo  $tag_list;
 		}
 	}
@@ -220,15 +220,15 @@ class Helper
 	 * [t_entry_publisher description]
 	 * @return void [description]
 	 */
-	public function t_entry_publisher() 
+	public function t_entry_publisher()
 	{
 		// Translators: used between list items, there is a space after the comma.
 		if ( !taxonomy_exists('publisher') )
 			return false;
-		
+
 		global $post;
 		$publisher_list = get_the_term_list( $post->ID, 'publisher', '<span class="tags-links"><i class="fa fa-book fa-fw"></i> ', ', ', '</span>' );
-		if ( $publisher_list ) 
+		if ( $publisher_list )
 		{
 			echo $publisher_list;
 		}
@@ -238,7 +238,7 @@ class Helper
 	 * [t_entry_cat description]
 	 * @return [type] [description]
 	 */
-	public function t_entry_cat() 
+	public function t_entry_cat()
 	{
 		// Translators: used between list items, there is a space after the comma.
 		$categories_list = get_the_category_list( ', ' );
@@ -277,7 +277,7 @@ class Helper
 	{
 		if ( function_exists( 'wp_pagenavi') )
 		{
-			wp_pagenavi( array( 'options' => array(  
+			wp_pagenavi( array( 'options' => array(
 				'pages_text'					=> '%CURRENT_PAGE% / %TOTAL_PAGES%',
 				'pages_text'					=> '',
 				'current_text'					=> '%PAGE_NUMBER%',
@@ -312,5 +312,32 @@ class Helper
 		return get_option( 'term_' . $term_id . '_meta_avatar' );
 	}
 
+	/**
+	 * disable_wp_emojicons
+	 *
+	 * @link http://wordpress.stackexchange.com/questions/185577/disable-emojicons-introduced-with-wp-4-2
+	 */
+	public function disable_wp_emojicons()
+	{
+		// all actions related to emojis
+		remove_action( 'admin_print_styles', 'print_emoji_styles' );
+		remove_action( 'wp_head', 'print_emoji_detection_script', 7 );
+		remove_action( 'admin_print_scripts', 'print_emoji_detection_script' );
+		remove_action( 'wp_print_styles', 'print_emoji_styles' );
+		remove_filter( 'wp_mail', 'wp_staticize_emoji_for_email' );
+		remove_filter( 'the_content_feed', 'wp_staticize_emoji' );
+		remove_filter( 'comment_text_rss', 'wp_staticize_emoji' );
+
+		// filter to remove TinyMCE emojis
+		add_filter( 'tiny_mce_plugins', $this, 'disable_emojicons_tinymce' );
+	}
+
+	public function disable_emojicons_tinymce( $plugins ) {
+		if ( is_array( $plugins ) ) {
+			return array_diff( $plugins, array( 'wpemoji' ) );
+		} else {
+			return array();
+		}
+	}
 
 }
