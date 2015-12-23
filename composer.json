@@ -17,10 +17,10 @@
 		      "package": {
 		        "name": "wordpress",
 		        "type": "webroot",
-		        "version": "4.3.1",
+		        "version": "4.4",
 		        "dist": {
 		          "type": "zip",
-		          "url": "https://github.com/WordPress/WordPress/archive/4.3.1.zip"
+		          "url": "https://github.com/WordPress/WordPress/archive/4.4.zip"
 		        },
 		        "require": {
 		          "fancyguy/webroot-installer": "1.0.0"
@@ -30,19 +30,19 @@
     ],
     "require":
     {
-		    "wordpress": "4.3.1",
+		    "wordpress": "4.4",
 		    "fancyguy/webroot-installer": "1.0.0",
 		    "wpackagist-plugin/akismet": "dev-trunk",
 		    "wpackagist-plugin/regenerate-thumbnails": ">=2.2.4",
 		    "wpackagist-plugin/wp-pagenavi": ">=2.8",
 		    "wpackagist-plugin/acf-field-date-time-picker": ">=2",
 		    "wpackagist-plugin/members": ">=1.0.2",
-		    "wpackagist-plugin/wp-mail-smtp": ">=0.9",
-		    "wpackagist-plugin/wordpress-importer": ">=0.6",
-		    "wpackagist-plugin/responsive-lightbox": ">=1.6.2",
-		    "wpackagist-plugin/advanced-cron-manager": ">=1.4",
-		    "wpackagist-plugin/members": ">=0.2.5",
-		    "wpackagist-plugin/woocommerce": ">=2.4.6"
+		    "wpackagist-plugin/wp-mail-smtp": ">=0.9.5",
+		    "wpackagist-plugin/wordpress-importer": ">=0.6.1",
+		    "wpackagist-plugin/responsive-lightbox": ">=1.6.6",
+		    "wpackagist-plugin/advanced-cron-manager": ">=1.4.3",
+		    "wpackagist-plugin/members": ">=1.1.0",
+		    "wpackagist-plugin/woocommerce": ">=2.4.12"
     },
     "extra":
     {
