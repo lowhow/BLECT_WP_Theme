@@ -17,10 +17,10 @@
 		      "package": {
 		        "name": "wordpress",
 		        "type": "webroot",
-		        "version": "4.4",
+		        "version": "4.7",
 		        "dist": {
 		          "type": "zip",
-		          "url": "https://github.com/WordPress/WordPress/archive/4.4.zip"
+		          "url": "https://github.com/WordPress/WordPress/archive/4.7.zip"
 		        },
 		        "require": {
 		          "fancyguy/webroot-installer": "1.0.0"
@@ -30,13 +30,12 @@
     ],
     "require":
     {
-		    "wordpress": "4.4",
+		    "wordpress": "4.7",
 		    "fancyguy/webroot-installer": "1.0.0",
 		    "wpackagist-plugin/akismet": "dev-trunk",
 		    "wpackagist-plugin/regenerate-thumbnails": ">=2.2.4",
 		    "wpackagist-plugin/wp-pagenavi": ">=2.8",
 		    "wpackagist-plugin/acf-field-date-time-picker": ">=2",
-		    "wpackagist-plugin/members": ">=1.0.2",
 		    "wpackagist-plugin/wp-mail-smtp": ">=0.9.5",
 		    "wpackagist-plugin/wordpress-importer": ">=0.6.1",
 		    "wpackagist-plugin/responsive-lightbox": ">=1.6.6",
